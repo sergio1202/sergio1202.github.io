@@ -1,0 +1,68 @@
+Species	BaseHitPoints	TargetNumber	Hands	Move	WearsArmor	SpecialAbility
+Bot (sentient)	4	8		4	N	Mechanical: -1 point per die of damage. 1 free upgrade per rank (no other upgrades allowed). No cyberware.
+Blootian	0	11		2+
+1-4	N	Bubbly: Free Reroll on Life Support Checks and the largest die in an attack (or a needler hit) pops a limb-bubble instead of dealing damage. Add limb-bubbles to move and hands attribute. Subtract limb-bubbles from Target #. Athletics check of 8 to regrow limb-bubble or when healing regrow one limb bubble in place of a die of hit point healing. Begin play with maximum bubbles (4).
+Canosian	8	8		5	N	Tumble: You get a second move action either before or after your action.
+Diploid	4	8		4	Y	Bifurcation: You get two separate phases each phase as if you were two characters with the same body. All active skill check actions in phases (not upgrades, requisitions) are at a -3 penalty.
+Fungaloid	8	9	2	4	N	Regenerate: Recover 2 points at the end of each phase as long as damage isn't more than your hit points.
+Human	5	8	2	5	Y	Willpower: You may reroll one or both dice when making a skill check within your profession. You need not decide whether to reroll both before rerolling either.
+Kerbite	5	9	5	6	Y	Cooperative: Once per phase, you get a free Assist action on a friendly as you are moving adjacent to them during your move action.
+Silicoid	9	7	1	4	N	Rocky: Each time you would be dealt damage reduce it by 1d6.
+Strong: Add +10 Carry and +1 point of damage dealt with melee attacks.
+Tentac	6	9		6	N	Resiliency: Roll an extra die each time you are damaged and remove the highest die.
+Trundlian	0	8	7	2	N	Versatile: You may reroll “1”'s in your initial skill checks.
+Add your empty hands to your hit points or move in any combination.
+Vomeg	7	7		5	Y	Reach: You may act from any adjacent square as if you were in it.
+Whistler	9	7	4	5	N	Puff: One of your moves in each move action may be a jet move that doesn't require a skill check.
+Xeloxian	5	8	6	2	Y	Fistwalk: Add free hands to move value.
+Aggressive: Add +1 point to direct fire personal attack damage.
+Zoallan	4	9	3	7	N	Carapace: -2 points of damage from all sources.
+						
+						
+ADVANCED SPECIES						These Species aren't necessarily more effective than the others but they are more challenging to play. Beginning players are strongly encouraged to select other species.
+Species	 HP	TN	Hands	Move	 Armor	Special Ability
+Chronosian
+(Advanced)	7	8		5	N	Timehop: May choose on phase 1 to jump back in time from phase 6 to phase 1 as a free action in the future. Future self does not move or act on phase one. You must spend the automatic action on phase 6 in the spot you jumped back from to jump back. When you jump back, all damage and states (stun, ionization, etc.) from both selves converge into the remaining self. Each extra or missing piece of equipment causes a die of damage and is annihilated.
+Minutian
+(Advanced)	2	11	*	6	N	Alien Ability: Tiny: Divide carry by 2. You don't slag squares you occupy and occupied squares aren't slagged for you (jetpack restrictions still apply). You are not entitled to take free attacks on things entering your square.
+Featherweight: Suffer ½  damage (round down). Convert the rest into movement you must spend immediately. You may not enter a square you have already been in with this movement. If forced to do so, it becomes damage. Getting moved through occupied squares subjects you to free attacks.
+Pyreltian
+(Advanced)	6	8		5	N	Phasing: In phase 1 you always exist as normal. On other phases roll a die (luckable) when it would be your turn to act. If the dieroll is less than the phase number you are “in phase” and get a number of actions equal to the dieroll. If the dieroll is equal to or greater than the phase number, you phase out and cannot act or be acted upon until you phase in.
+Whaloid
+(Advanced)	13	3	1	0	N	Immense: You occupy each square of the module you are in (slagging them for others). You cannot leave the module except at a specially equipped starbase. You can reach into the first square of each adjacent module. You cannot grapple or be grappled but you can as an action pick up an unresisting character and deposit them in any square in your module or adjacent to the first square of adjacent modules.
+You may ignore 2 OOC.
+You suffer half damage from all sources (round up).
+						
+Species	 HP	TN	Hands	Move	 Armor	Special Ability
+(Beastmen)	?	?	?	?	?	Varies
+Avianoid	3	9	2	4	N	Wings: Ignore OOC for movement purposes  May move a number of their moves as automatically successful Jet moves equal to your Athletics. See Jet moves page xxx.
+Cheetahoid	4	8	2	9	Y	Sprint: Once per phase may suffer 1die of damage to take an additional action during your turn at a penalty equal to the damage roll (including movement).
+Bite: Your unarmed attack deals1d6 damage
+Crocodilian	5	7	2	5	N	Patient: (see Patient special ability page xxx)
+Bite: Your unarmed attack deals1d6 damage
+Thick Hide: 1 point natural armor
+Elephantoid	9	5	3	5	N	Huge: Adjacent squares are considered slagged for other characters.
+Tusks: Your unarmed attack deals1d6 damage
+Thick Hide: 1 point natural armor
+Felinoids
+aka Meeks	6	8	2	6	Y	Ferocious: May make a free melee attack with claw once per phase.
+Claws: Your unarmed attack deals1d6 damage
+Gorilloids	6	7	4	3	Y	Fistwalk: Add free hands to move value.
+Tough: See Tough special ability page xxx.
+Lupinoids, Caninoids	5	8	2	6	Y	Flanker: Add +1 die to melee damage you deal if there is an ally adjacent to your target.
+Claws: Your unarmed attack deals1d6 damage
+Lapinoid	3	9	2	7	Y	Lucky: You get +3 Luck.
+Elusive: You may force opponents to reroll one die in personal attack skill checks against you.
+Rhinoceroid	7	6	2	6	N	Charger: See Charger special ability page xxx except may use horn for this attack.
+Horn: Your unarmed attack deals1d6 damage
+Thick Hide: 1 point natural armor
+Reptilianoid
+(Snakoid)	4	8	2	5	N	Bite: Your unarmed attack deals1d6 damage
+Poisonous bite: Anyone bit by a snake suffers as if hit by Oucho toxin (page xxx).
+Testudinoid
+Turtloid	2	8	2	4	N	Shell: Reduce all damage by one point per die.
+Braced: See Braced special ability page xxx.
+Ursinoid	9	7	2	5	N	Death Marcher: See  special ability page xxx. This is already figured into your base hit points.
+Thick Hide: 1 point natural armor.
+Claws: Your unarmed attack deals1d6 damage
+
