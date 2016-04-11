@@ -44,9 +44,9 @@
 			<td colspan="4">
 				<input type="text" style="width: 100%;" ng-model="name" placeholder="name" >
 			</td>
-			<td class="light-gray" style="width: 0.9in;" >RANK:</td>
+			<td class="light-gray" style="width: 0.9in;">RANK:</td>
 			<td  >
-				<input type="text" ng-model="rank" placeholder="rank">
+				<input type="number" ng-model="rank" ng-change="rankChange()" placeholder="rank">
 			</td>
 			<td rowspan="12" colspan="2" id="charImage" style="width: 250px;" ></td>
 		</tr>
@@ -70,7 +70,8 @@
 			<td>SPECIES:</td>
 			<td colspan="4">
                 <div style="width:100%;">
-					<select ng-model="selectedSpecies" ng-options="s.Species for s in species " style="width: 100%">
+					<select ng-model="selectedSpecies" ng-options="s.Species for s in species " 
+						ng-change="rankChange()" style="width: 100%">
 						<option value="">Please select a species...</option>
 					</select>
                 </div>
@@ -97,7 +98,7 @@
 			<td class="light-gray" >MOD</td>
 			<td class="light-gray" >CARRY:</td>
 			<td>
-				<input type="text" align="left" ng-model="carry" style="width: 65px; margin-left:-10px;" placeholder="ATH X 10" >
+				<input type="number" align="left" ng-value="carry" style="width: 65px; margin-left:-10px;" placeholder="ATH X 10" >
 			</td>
 			<td >HP.BASE:</td>
 			<td >
@@ -107,20 +108,20 @@
 		<tr>
 			<td>ATHLETICS:</td>
 			<td >
-				<input type="text" ng-model="ath" >
+				<input type="number" ng-model="athletics" ng-change="statChange()" >
 			</td>
 			<td >
-				<input type="text" ng-model="ath_mod" >
+				<input type="number" ng-model="ath_mod" >
 			</td>
 			<td style="text-align: left;" >NOTES:</td>
 		</tr>
 		<tr>
 			<td>COMBAT:</td>
 			<td >
-				<input type="text" ng-model="combat" >
+				<input type="number" ng-model="combat" ng-change="statChange()">
 			</td>
 			<td >
-				<input type="text" ng-model="combat_mod" >
+				<input type="number" ng-model="combat_mod" >
 			</td>
 			<td rowspan="6" colspan="4"><textarea class="boxsizingBorder" style="width:100%; height: 100%;" rows="6"></textarea></td>
 
@@ -128,74 +129,74 @@
 		<tr>
 			<td>ENGINEERING:</td>
 			<td >
-				<input type="text" ng-model="eng" >
+				<input type="number" ng-model="engineering" ng-change="statChange()" >
 			</td>
 			<td >
-				<input type="text" ng-model="eng_mod" >
+				<input type="number" ng-model="eng_mod" >
 			</td>
 			
 		</tr>
 		<tr>
 			<td>PILOTING:</td>
 			<td >
-				<input type="text" ng-model="piloting" >
+				<input type="number" ng-model="piloting" >
 			</td>
 			<td >
-				<input type="text" ng-model="piloting_mod" >
+				<input type="number" ng-model="piloting_mod" >
 			</td>
 			
 		</tr>
 		<tr>
 			<td>SCIENCE:</td>
 			<td >
-				<input type="text" ng-model="sci" >
+				<input type="number" ng-model="science" >
 			</td>
 			<td >
-				<input type="text" ng-model="sci_mod" >
+				<input type="number" ng-model="sci_mod" >
 			</td>
 	
 		</tr>
 		<tr>
 			<td></td>
 			<td >
-				<input type="text" ng-model="misc1" >
+				<input type="number" ng-model="misc1" >
 			</td>
 			<td >
-				<input type="text" ng-model="misc1_mod" >
+				<input type="number" ng-model="misc1_mod" >
 			</td>
 		</td>
 		<tr>
 			<td></td>
 			<td >
-				<input type="text" ng-model="misc2" >
+				<input type="number" ng-model="misc2" >
 			</td>
 			<td >
-				<input type="text" ng-model="misc2_mod" >
+				<input type="number" ng-model="misc2_mod" >
 			</td>
 		</tr>
 		<tr>
 			<td class="light-gray">EXPERIENCE</td>
 			<td colspan="2">
-				<input type="text" ng-model="exp" >
+				<input type="number" ng-model="exp" >
 			</td>
 			<td></td><td></td><td></td><td></td>
 			<td class="light-gray" >HIT POINTS:</td>
 			<td colspan="1">
-				<input type="text" ng-model="hp" placeholder="ATH + RANK + H.P. BASE" >
+				<input type="number" ng-model="hp" placeholder="ATH + RANK + H.P. BASE" >
 			</td>
 		</tr>
 		<tr>
 			<td class="light-gray">PRESTIGE</td>
 			<td colspan="2">
-				<input type="text" ng-model="exp" >
+				<input type="number" ng-model="exp" >
 			</td>
 			<td class="light-gray" colspan="2">CREDITS:</td>
 			<td colspan="2">
-				<input type="text" ng-model="creds" >
+				<input type="number" ng-model="creds" >
 			</td>
 			<td class="light-gray">LUCK:</td>
 			<td colspan="1">
-				<input type="text" ng-model="luck" placeholder="RANK + 5" >
+				<input type="number" ng-model="luck" placeholder="RANK + 5" >
 			</td>
 		</tr>
 	</table>

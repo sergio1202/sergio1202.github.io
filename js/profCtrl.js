@@ -1,5 +1,40 @@
 ﻿app.controller('profCtrl', ['$scope', function ($scope) {
     $scope.professions = ['Marine', 'Engineer', 'Pilot', 'Scientist'];
+	$scope.athletics = 1;
+	$scope.combat = 0;
+	$scope.engineering = 0;
+	$scope.piloting = 0;
+	$scope.science = 0;
+	$scope.misc1 = 0;
+	$scope.misc2 = 0;
+	
+	$scope.rank = 1;
+	$scope.baseHp = 0;
+	$scope.hp = $scope.athletics + $scope.rank + $scope.baseHp;
+	$scope.luck = $scope.rank + 5;
+	$scope.carry = $scope.athletics * 10; 
+	
+	$scope.selectedSpecies = null;
+	
+	$scope.rankChange = function() {
+		//console.log($(this));
+		if($scope.selectedSpecies) {
+			//console.log($scope.selectedSpecies);
+			//console.log($scope.selectedSpecies.BaseHitPoints);
+			$scope.baseHp = Number($scope.selectedSpecies.BaseHitPoints);
+		}
+		$scope.luck = $scope.rank + 5;
+		$scope.hp = $scope.athletics + $scope.rank + $scope.baseHp;
+	};
+	
+	$scope.statChange = function () {
+		//console.log($(this));
+		$scope.carry = $scope.athletics * 10;
+		$scope.hp = $scope.athletics + $scope.rank + $scope.baseHp;
+	};
+	
+
+
     $scope.species = [
         {
             Species: 'Bot (sentient)', BaseHitPoints: '4', TargetNumber: '8', Hands: '1', Move: '4', WearsArmor: 'N',
@@ -131,9 +166,7 @@
         }
     ];
 
-    $scope.speciesSelect = function (index) {
-        return $scope.species[index].SpecialAbility;
-    };
+	
 
 
 }]);
