@@ -25,9 +25,8 @@
 		width: 100%;
 	}
 	</style>
-<body>
-	<table class="container-fluid" style="width: 8.5in; border-style: solid;" 
-	ng-app="profApp" ng-controller="profCtrl">
+<body ng-app="profApp" ng-controller="profCtrl">
+	<table class="container-fluid" style="width: 8.5in; border-style: solid;">
 	<col width="100px">
 	<col width="40px">
 	<col width="40px">
@@ -54,11 +53,10 @@
 			<td >PROFESSION:</td>
 			<td colspan="4">
 				<div style="width:100%;">
-				  <select style="width:100%;">
-					<option ng-repeat="x in professions">
-					  {{ x }}
-					</option>
-				  </select>
+					<select ng-model="selectedProfession" ng-options="p for p in professions " 
+						style="width: 100%">
+						<option value="">Please select a profession...</option>
+					</select>
 				</div>
 			</td>
 			<td >MOVE:</td>
@@ -123,7 +121,7 @@
 			<td >
 				<input type="number" ng-model="combat_mod" >
 			</td>
-			<td rowspan="6" colspan="4"><textarea class="boxsizingBorder" style="width:100%; height: 100%;" rows="6"></textarea></td>
+			<td rowspan="6" colspan="4"><textarea ng-model="notes" class="boxsizingBorder" style="width:100%; height: 100%;" rows="6"></textarea></td>
 
 		</tr>
 		<tr>
@@ -199,5 +197,14 @@
 				<input type="number" ng-model="luck" placeholder="RANK + 5" >
 			</td>
 		</tr>
+		<tr><td row="5">
+			<form data-ng-submit="saveCharacter()" >
+			<input type="text" data-ng-model="name" placeholder="{{ name }}" />
+			<br />
+			<input type="submit" value="Save" />
+			</td>
+		</tr>
+	</form>
+
 	</table>
 </body>

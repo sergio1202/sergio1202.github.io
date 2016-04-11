@@ -1,4 +1,7 @@
 ﻿app.controller('profCtrl', ['$scope', function ($scope) {
+	$scope.saved = JSON.parse(localStorage.getItem('stats'));
+	$scope.name;
+	$scope.rank = 1;
     $scope.professions = ['Marine', 'Engineer', 'Pilot', 'Scientist'];
 	$scope.athletics = 1;
 	$scope.combat = 0;
@@ -8,13 +11,30 @@
 	$scope.misc1 = 0;
 	$scope.misc2 = 0;
 	
-	$scope.rank = 1;
 	$scope.baseHp = 0;
 	$scope.hp = $scope.athletics + $scope.rank + $scope.baseHp;
 	$scope.luck = $scope.rank + 5;
 	$scope.carry = $scope.athletics * 10; 
-	
 	$scope.selectedSpecies = null;
+	
+	if($scope.saved != null) {
+		$scope.name = $scope.saved['name'];
+		$scope.selectedProfession = $scope.saved['profession'];
+		$scope.rank = $scope.saved['rank'];
+		$scope.athletics = $scope.saved['athletics'];
+		$scope.combat = $scope.saved['combat'];
+		$scope.engineering = $scope.saved['engineering'];
+		$scope.piloting = $scope.saved['piloting'];
+		$scope.science = $scope.saved['science'];
+		$scope.misc1 = $scope.saved['misc1'];
+		$scope.misc2 = $scope.saved['misc2'];
+		$scope.selectedSpecies = $scope.saved['selectedSpecies'];
+		$scope.notes = $scope.saved['notes'];
+		console.log($scope.saved);
+	}
+	
+	//$scope.notes = localStorage.getItem('stats');
+	
 	
 	$scope.rankChange = function() {
 		//console.log($(this));
@@ -24,13 +44,13 @@
 			$scope.baseHp = Number($scope.selectedSpecies.BaseHitPoints);
 		}
 		$scope.luck = $scope.rank + 5;
-		$scope.hp = $scope.athletics + $scope.rank + $scope.baseHp;
-	};
-	
-	$scope.statChange = function () {
-		//console.log($(this));
 		$scope.carry = $scope.athletics * 10;
 		$scope.hp = $scope.athletics + $scope.rank + $scope.baseHp;
+	};
+	$scope.rankChange();
+	
+	$scope.statChange = function () {
+		$scope.rankChange();
 	};
 	
 
@@ -166,6 +186,22 @@
         }
     ];
 
+	$scope.saveCharacter = function() {
+		var stats = {};
+		stats["name"] = $scope.name;
+		stats["rank"] = $scope.rank;
+		stats["profession"] = $scope.selectedProfession;
+		stats["athletics"] = $scope.athletics;
+		stats["combat"] = $scope.combat;
+		stats["engineering"] = $scope.engineering;
+		stats["piloting"] = $scope.piloting;
+		stats["science"] = $scope.science;
+		stats["misc1"] = $scope.misc1;
+		stats["misc2"] = $scope.misc2;
+		stats['selectedSpecies'] = $scope.selectedSpecies;
+		stats['notes'] = $scope.notes;
+		localStorage.setItem('stats', JSON.stringify(stats));
+	};
 	
 
 
