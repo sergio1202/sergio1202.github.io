@@ -197,14 +197,25 @@
 				<input type="number" ng-model="luck" placeholder="RANK + 5" >
 			</td>
 		</tr>
-		<tr><td row="5">
-			<form data-ng-submit="saveCharacter()" >
-			<input type="text" data-ng-model="name" placeholder="{{ name }}" />
-			<br />
-			<input type="submit" value="Save" />
+		<tr>
+			<td colspan="1">
+				<form data-ng-submit="saveCharacter()" >
+					<input type="submit" value="Save" />
+				</form>
+			</td>
+			<td colspan="2">
+			</td>
+			<td>
+				<form data-ng-submit="loadCharacter()" >
+					<input type="submit" value="Load" />
+				</form>
+			</td>
+			<td>
+				<select ng-model="loadName" ng-options="n for n in names " 
+					style="width: 100%">
+				</select>
 			</td>
 		</tr>
-	</form>
 
 	</table>
 </body>
