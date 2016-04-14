@@ -31,13 +31,31 @@
 		$scope.rankChange();
 	};
 	
-
-
     $scope.species = 
 	$http.get('http://sergio1202.github.io/js/species.json').success(function(data) {
 		$scope.species = data;
     });
-	//console.log(JSON.stringify($scope.species));
+	
+	$scope.items = [];
+    for (var i = 1; i < 18; i++) {
+        $scope.items.push({
+            name: '',
+            mass: '', 
+            notes: '',
+			status: ''
+        });
+    }
+	
+	$scope.abilities = [];
+    for (var i = 1; i < 18; i++) {
+        $scope.abilities.push({
+            name: '',
+            notes: '', 
+            pool: '',
+			used: ''
+        });
+    }
+	
 	
 	if($scope.saved != null) {
 		$scope.names = Object.keys($scope.saved);

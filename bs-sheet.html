@@ -226,11 +226,11 @@
 					<td class="white-on-black">NOTES</td>
 					<td class="white-on-black">STATUS</td>
 				</tr>
-				<tr>
-					<td>&nbsp;</td>
-					<td></td>
-					<td></td>
-					<td></td>
+				<tr ng-repeat="item in items" style="height: 21px">
+					<td>{{ item.name }}</td>
+					<td>{{ item.mass }}</td>
+					<td>{{ item.notes }}</td>
+					<td>{{ item.status }}</td>
 				</tr>
 			</table>
 		</div>
@@ -249,11 +249,11 @@
 					<td class="white-on-black">POOL</td>
 					<td class="white-on-black">USED</td>
 				</tr>
-				<tr>
-					<td>&nbsp;</td>
-					<td></td>
-					<td></td>
-					<td></td>
+				<tr ng-repeat="ability in abilities" style="height: 21px">
+					<td>{{ ability.name }}</td>
+					<td>{{ ability.notes }}</td>
+					<td>{{ ability.pool }}</td>
+					<td>{{ ability.used }}</td>
 				</tr>
 			</table>
 		</div>
