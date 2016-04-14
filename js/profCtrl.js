@@ -40,22 +40,7 @@
 	//console.log(JSON.stringify($scope.species));
 	
 	if($scope.saved != null) {
-		console.log($scope.saved);
 		$scope.names = Object.keys($scope.saved);
-		console.log(Object.keys($scope.saved));
-		$scope.name = $scope.saved['name'];
-		$scope.selectedProfession = $scope.saved['profession'];
-		$scope.rank = $scope.saved['rank'];
-		$scope.athletics = $scope.saved['athletics'];
-		$scope.combat = $scope.saved['combat'];
-		$scope.engineering = $scope.saved['engineering'];
-		$scope.piloting = $scope.saved['piloting'];
-		$scope.science = $scope.saved['science'];
-		$scope.misc1 = $scope.saved['misc1'];
-		$scope.misc2 = $scope.saved['misc2'];
-		$scope.selectedSpecies = $scope.saved['selectedSpecies'];
-		$scope.notes = $scope.saved['notes'];
-		
 	}
 
 	$scope.saveCharacter = function() {
@@ -76,6 +61,9 @@
 		$scope.saved[$scope.name] = stats;
 		localStorage.setItem('char', JSON.stringify($scope.saved));
 		console.log($scope.saved);
+		//$scope.saved = JSON.parse(localStorage.getItem('char'));
+
+		$scope.names = Object.keys($scope.saved);
 	};
 	$scope.loadCharacter = function() {
 		console.log($scope.loadName);

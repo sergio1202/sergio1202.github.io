@@ -26,196 +26,199 @@
 	}
 	</style>
 <body ng-app="profApp" ng-controller="profCtrl">
-	<table class="container-fluid" style="width: 8.5in; border-style: solid;">
-	<col width="100px">
-	<col width="40px">
-	<col width="40px">
-	<col width="40px">
-	<col width="40px">
-	<col width="40px">
-	<col width="60px">
-	<col width="40px">
-	<col width="60px">
-	<col width="40px">
-		<tr>
+	<div class="container-fluid" style="width: 8.5in; ">
+	<div class="row">
+		<table class="col-md-12" style="width: 100%; border-style: solid;">
+			<col width="100px">
+			<col width="40px">
+			<col width="40px">
+			<col width="40px">
+			<col width="40px">
+			<col width="40px">
+			<col width="60px">
+			<col width="40px">
+			<col width="60px">
+			<col width="40px">
+			<tr>
+				<td style="background-color:black; color:white;">NAME:</td>
+				<td colspan="4">
+					<input type="text" style="width: 100%;" ng-model="name" placeholder="name" >
+				</td>
+				<td class="light-gray" style="width: 0.9in;">RANK:</td>
+				<td  >
+					<input type="number" ng-model="rank" ng-change="rankChange()" placeholder="rank">
+				</td>
+				<td rowspan="12" colspan="2" id="charImage" style="width: 250px;" ></td>
+			</tr>
+			<tr>
+				<td >PROFESSION:</td>
+				<td colspan="4">
+					<div style="width:100%;">
+						<select ng-model="selectedProfession" ng-options="p for p in professions " 
+							style="width: 100%">
+							<option value="">Please select a profession...</option>
+						</select>
+					</div>
+				</td>
+				<td >MOVE:</td>
+				<td >
+					<span>{{selectedSpecies.Move}}</span>
+				</td>
+			</tr>
+			<tr>
+				<td>SPECIES:</td>
+				<td colspan="4">
+					<div style="width:100%;">
+						<select ng-model="selectedSpecies" ng-options="s.Species for s in species " 
+							ng-change="rankChange()" style="width: 100%">
+							<option value="">Please select a species...</option>
+						</select>
+					</div>
+				</td>
 
-			<td style="background-color:black; color:white;">NAME:</td>
-			<td colspan="4">
-				<input type="text" style="width: 100%;" ng-model="name" placeholder="name" >
-			</td>
-			<td class="light-gray" style="width: 0.9in;">RANK:</td>
-			<td  >
-				<input type="number" ng-model="rank" ng-change="rankChange()" placeholder="rank">
-			</td>
-			<td rowspan="12" colspan="2" id="charImage" style="width: 250px;" ></td>
-		</tr>
-		<tr>
-			<td >PROFESSION:</td>
-			<td colspan="4">
-				<div style="width:100%;">
-					<select ng-model="selectedProfession" ng-options="p for p in professions " 
-						style="width: 100%">
-						<option value="">Please select a profession...</option>
-					</select>
-				</div>
-			</td>
-			<td >MOVE:</td>
-			<td >
-				<span>{{selectedSpecies.Move}}</span>
-			</td>
-		</tr>
-		<tr>
-			<td>SPECIES:</td>
-			<td colspan="4">
-                <div style="width:100%;">
-					<select ng-model="selectedSpecies" ng-options="s.Species for s in species " 
-						ng-change="rankChange()" style="width: 100%">
-						<option value="">Please select a species...</option>
-					</select>
-                </div>
-			</td>
+				<td >TARGET#:</td>
+				<td >
+					<span>{{selectedSpecies.TargetNumber}}</span>
+				</td>
+			</tr>
+			<tr>
+				<td>ALIEN ABILITY:</td>
+				<td colspan="4">
+					<span>{{selectedSpecies.SpecialAbility}}</span>
+				</td>
+				<td >#HANDS:</td>
+				<td >
+					<span>{{selectedSpecies.Hands}}</span>
+				</td>
+			</tr>
+			<tr>
+				<td class="light-gray" >SKILLS</td>
+				<td class="light-gray" >LEVEL</td>
+				<td class="light-gray" >MOD</td>
+				<td class="light-gray" >CARRY:</td>
+				<td>
+					<input type="number" align="left" ng-value="carry" style="width: 65px; margin-left:-10px;" placeholder="ATH X 10" >
+				</td>
+				<td >HP.BASE:</td>
+				<td >
+					<span>{{selectedSpecies.BaseHitPoints}}</span>
+				</td>
+			</tr>
+			<tr>
+				<td>ATHLETICS:</td>
+				<td >
+					<input type="number" ng-model="athletics" ng-change="statChange()" >
+				</td>
+				<td >
+					<input type="number" ng-model="ath_mod" >
+				</td>
+				<td style="text-align: left;" >NOTES:</td>
+			</tr>
+			<tr>
+				<td>COMBAT:</td>
+				<td >
+					<input type="number" ng-model="combat" ng-change="statChange()">
+				</td>
+				<td >
+					<input type="number" ng-model="combat_mod" >
+				</td>
+				<td rowspan="6" colspan="4"><textarea ng-model="notes" class="boxsizingBorder" style="width:100%; height: 100%;" rows="6"></textarea></td>
 
-			<td >TARGET#:</td>
-			<td >
-				<span>{{selectedSpecies.TargetNumber}}</span>
+			</tr>
+			<tr>
+				<td>ENGINEERING:</td>
+				<td >
+					<input type="number" ng-model="engineering" ng-change="statChange()" >
+				</td>
+				<td >
+					<input type="number" ng-model="eng_mod" >
+				</td>
+				
+			</tr>
+			<tr>
+				<td>PILOTING:</td>
+				<td >
+					<input type="number" ng-model="piloting" >
+				</td>
+				<td >
+					<input type="number" ng-model="piloting_mod" >
+				</td>
+				
+			</tr>
+			<tr>
+				<td>SCIENCE:</td>
+				<td >
+					<input type="number" ng-model="science" >
+				</td>
+				<td >
+					<input type="number" ng-model="sci_mod" >
+				</td>
+		
+			</tr>
+			<tr>
+				<td></td>
+				<td >
+					<input type="number" ng-model="misc1" >
+				</td>
+				<td >
+					<input type="number" ng-model="misc1_mod" >
+				</td>
 			</td>
-		</tr>
-		<tr>
-			<td>ALIEN ABILITY:</td>
-			<td colspan="4">
-				<span>{{selectedSpecies.SpecialAbility}}</span>
-			</td>
-			<td >#HANDS:</td>
-			<td >
-				<span>{{selectedSpecies.Hands}}</span>
-			</td>
-		</tr>
-		<tr>
-			<td class="light-gray" >SKILLS</td>
-			<td class="light-gray" >LEVEL</td>
-			<td class="light-gray" >MOD</td>
-			<td class="light-gray" >CARRY:</td>
-			<td>
-				<input type="number" align="left" ng-value="carry" style="width: 65px; margin-left:-10px;" placeholder="ATH X 10" >
-			</td>
-			<td >HP.BASE:</td>
-			<td >
-				<span>{{selectedSpecies.BaseHitPoints}}</span>
-			</td>
-		</tr>
-		<tr>
-			<td>ATHLETICS:</td>
-			<td >
-				<input type="number" ng-model="athletics" ng-change="statChange()" >
-			</td>
-			<td >
-				<input type="number" ng-model="ath_mod" >
-			</td>
-			<td style="text-align: left;" >NOTES:</td>
-		</tr>
-		<tr>
-			<td>COMBAT:</td>
-			<td >
-				<input type="number" ng-model="combat" ng-change="statChange()">
-			</td>
-			<td >
-				<input type="number" ng-model="combat_mod" >
-			</td>
-			<td rowspan="6" colspan="4"><textarea ng-model="notes" class="boxsizingBorder" style="width:100%; height: 100%;" rows="6"></textarea></td>
-
-		</tr>
-		<tr>
-			<td>ENGINEERING:</td>
-			<td >
-				<input type="number" ng-model="engineering" ng-change="statChange()" >
-			</td>
-			<td >
-				<input type="number" ng-model="eng_mod" >
-			</td>
-			
-		</tr>
-		<tr>
-			<td>PILOTING:</td>
-			<td >
-				<input type="number" ng-model="piloting" >
-			</td>
-			<td >
-				<input type="number" ng-model="piloting_mod" >
-			</td>
-			
-		</tr>
-		<tr>
-			<td>SCIENCE:</td>
-			<td >
-				<input type="number" ng-model="science" >
-			</td>
-			<td >
-				<input type="number" ng-model="sci_mod" >
-			</td>
+			<tr>
+				<td></td>
+				<td >
+					<input type="number" ng-model="misc2" >
+				</td>
+				<td >
+					<input type="number" ng-model="misc2_mod" >
+				</td>
+			</tr>
+			<tr>
+				<td class="light-gray">EXPERIENCE</td>
+				<td colspan="2">
+					<input type="number" ng-model="exp" >
+				</td>
+				<td></td><td></td><td></td><td></td>
+				<td class="light-gray" >HIT POINTS:</td>
+				<td colspan="1">
+					<input type="number" ng-model="hp" placeholder="ATH + RANK + H.P. BASE" >
+				</td>
+			</tr>
+			<tr>
+				<td class="light-gray">PRESTIGE</td>
+				<td colspan="2">
+					<input type="number" ng-model="exp" >
+				</td>
+				<td class="light-gray" colspan="2">CREDITS:</td>
+				<td colspan="2">
+					<input type="number" ng-model="creds" >
+				</td>
+				<td class="light-gray">LUCK:</td>
+				<td colspan="1">
+					<input type="number" ng-model="luck" placeholder="RANK + 5" >
+				</td>
+			</tr>
+		</table>
+	</div>
 	
-		</tr>
-		<tr>
-			<td></td>
-			<td >
-				<input type="number" ng-model="misc1" >
-			</td>
-			<td >
-				<input type="number" ng-model="misc1_mod" >
-			</td>
-		</td>
-		<tr>
-			<td></td>
-			<td >
-				<input type="number" ng-model="misc2" >
-			</td>
-			<td >
-				<input type="number" ng-model="misc2_mod" >
-			</td>
-		</tr>
-		<tr>
-			<td class="light-gray">EXPERIENCE</td>
-			<td colspan="2">
-				<input type="number" ng-model="exp" >
-			</td>
-			<td></td><td></td><td></td><td></td>
-			<td class="light-gray" >HIT POINTS:</td>
-			<td colspan="1">
-				<input type="number" ng-model="hp" placeholder="ATH + RANK + H.P. BASE" >
-			</td>
-		</tr>
-		<tr>
-			<td class="light-gray">PRESTIGE</td>
-			<td colspan="2">
-				<input type="number" ng-model="exp" >
-			</td>
-			<td class="light-gray" colspan="2">CREDITS:</td>
-			<td colspan="2">
-				<input type="number" ng-model="creds" >
-			</td>
-			<td class="light-gray">LUCK:</td>
-			<td colspan="1">
-				<input type="number" ng-model="luck" placeholder="RANK + 5" >
-			</td>
-		</tr>
-		<tr>
-			<td colspan="1">
-				<form data-ng-submit="saveCharacter()" >
-					<input type="submit" value="Save" />
-				</form>
-			</td>
-			<td colspan="2">
-			</td>
-			<td>
-				<form data-ng-submit="loadCharacter()" >
-					<input type="submit" value="Load" />
-				</form>
-			</td>
-			<td>
-				<select ng-model="loadName" ng-options="n for n in names " 
-					style="width: 100%">
-				</select>
-			</td>
-		</tr>
+	<div class="row">
+		<div class="col-md-2">
+			<form data-ng-submit="saveCharacter()" >
+				<input type="submit" value="Save" />
+			</form>
+		</div>
+		<div class="col-md-2">
+			<form data-ng-submit="loadCharacter()" >
+				<input type="submit" value="Load" />
+			</form>
+		</div>
+		<div class="col-md-2">
 
-	</table>
+			<select ng-model="loadName" ng-options="n for n in names " 
+				style="width: 100%">
+			</select>
+		</div>
+		<div class="col-md-2">
+		</div>
+	</div>
 </body>
