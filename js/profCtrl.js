@@ -31,11 +31,15 @@
 		$scope.rankChange();
 	};
 	
-    $scope.species = 
-	$http.get('http://sergio1202.github.io/js/species.json').success(function(data) {
+    $scope.species = $http.get('http://sergio1202.github.io/js/species.json').success(function(data) {
 		$scope.species = data;
     });
-	
+
+    $scope.equpment = $http.get('http://sergio1202.github.io/js/equipment.json').success(function(data) {
+		$scope.equipment = data;
+    });
+
+
 	$scope.items = [];
     for (var i = 1; i < 18; i++) {
         $scope.items.push({
@@ -62,6 +66,11 @@
 	}
 
 	$scope.saveCharacter = function() {
+		if(!$scope.name) {
+			alert("missing name");
+			return;
+		}
+		console.log("name: " + $scope.name);
 		var stats = {};
 		stats["name"] = $scope.name;
 		stats["rank"] = $scope.rank;
