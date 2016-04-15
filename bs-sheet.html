@@ -4,37 +4,15 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="bs-sheet.css">
       <!-- Modules -->
     <script src="js/profApp.js"></script>
 
     <!-- Controllers -->
     <script src="js/profCtrl.js"></script>
-  <style>
-	div {
-		text-align: right;
-	}
-	.light-gray {
-		background-color:rgb(225,225,225);
-	}
-	.white-on-black {
-		background-color:black; 
-		color:white;
-		text-align: center;
-	}
-	.boxsizingBorder {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-	}
-	table, th, td {
-   border: 1px solid black;
-}
-	input {
-		width: 100%;
-	}
-	</style>
+  
 <body ng-app="profApp" ng-controller="profCtrl">
-	<div class="container-fluid" style="width: 8.5in; ">
+	<div class="container-fluid" style="width: 7.5in; ">
 	<div class="row">
 		<div class="col-md-12" >
 			<table style="width: 100%; border-style: solid;">
@@ -207,70 +185,85 @@
 						<input type="number" ng-model="luck" placeholder="RANK + 5" >
 					</td>
 				</tr>
+				<tr>
+					<td colspan="5">
+						<table style="width: 100%; border-style: solid; ">
+							<col width="35%">
+							<col width="10%">
+							<col width="50%">
+							<col width="15%">
+							<tr>
+								<th colspan="4" class="light-gray" style="text-align: center">EQUIPMENT</th>
+							</tr>
+							<tr>
+								<td class="white-on-black">ITEM</td>
+								<td class="white-on-black">MASS</td>
+								<td class="white-on-black">NOTES</td>
+								<td class="white-on-black">STATUS</td>
+							</tr>
+							<tr ng-repeat="item in items" style="height: 21px; max-height: 21px;">
+								<td><input type="text" ng-model="item.name"></td>
+								<td><input type="number" ng-model="item.mass"></td>
+								<td><input type="text" ng-model="item.notes"></td>
+								<td><input type="text" ng-model="item.status"></td>
+							</tr>
+						</table>
+					</td>
+					<td colspan="4">
+						<table style="width: 100%; border-style: solid; ">
+							<col width="25%">
+							<col width="25%">
+							<col width="15%">
+							<col width="15%">
+							<tr>
+								<th colspan="4" class="light-gray" style="text-align: center">SPECIAL ABILITIES</th>
+							</tr>
+							<tr>
+								<td class="white-on-black">ABILITY</td>
+								<td class="white-on-black">NOTES</td>
+								<td class="white-on-black">POOL</td>
+								<td class="white-on-black">USED</td>
+							</tr>
+							<tr ng-repeat="ability in abilities" style="height: 21px">
+								<td><input type="text" ng-model="ability.name"></td>
+								<td><input type="text" ng-model="ability.notes"></td>
+								<td><input type="text" ng-model="ability.pool"></td>
+								<td><input type="text" ng-model="ability.used"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
 			</table>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-6" style="padding-right: 0">
-			<table style="width: 100%; border-style: solid; ">
-				<col width="25%">
-				<col width="15%">
-				<col width="50%">
-				<col width="20%">
-				<tr>
-					<th colspan="4" class="light-gray" style="text-align: center">EQUIPMENT</th>
-				</tr>
-				<tr>
-					<td class="white-on-black">ITEM</td>
-					<td class="white-on-black">MASS</td>
-					<td class="white-on-black">NOTES</td>
-					<td class="white-on-black">STATUS</td>
-				</tr>
-				<tr ng-repeat="item in items" style="height: 21px">
-					<td>{{ item.name }}</td>
-					<td>{{ item.mass }}</td>
-					<td>{{ item.notes }}</td>
-					<td>{{ item.status }}</td>
-				</tr>
-			</table>
+	<div class="row no-print" style="margin: 10px; ">
+		<div class="col-md-2">
+			<form data-ng-submit="addItem()" >
+				<input type="submit" value="Add Item" class="btn btn-primary" />
+			</form>
 		</div>
-		<div class="col-md-6" style="padding-left: 0" >
-			<table style="width: 100%; border-style: solid; ">
-				<col width="25%">
-				<col width="25%">
-				<col width="15%">
-				<col width="15%">
-				<tr>
-					<th colspan="4" class="light-gray" style="text-align: center">SPECIAL ABILITIES</th>
-				</tr>
-				<tr>
-					<td class="white-on-black">ABILITY</td>
-					<td class="white-on-black">NOTES</td>
-					<td class="white-on-black">POOL</td>
-					<td class="white-on-black">USED</td>
-				</tr>
-				<tr ng-repeat="ability in abilities" style="height: 21px">
-					<td>{{ ability.name }}</td>
-					<td>{{ ability.notes }}</td>
-					<td>{{ ability.pool }}</td>
-					<td>{{ ability.used }}</td>
-				</tr>
-			</table>
+		<div class="col-md-4">
+			<select ng-model="selectedItem" ng-options="item.Name for item in equipment " ng-change="itemChange()"
+				style="width: 100%">
+			</select>
+		</div>
+		<div class="col-md-6" style="text-align: left; ">
+			<span style="width: 100%">{{itemInfo}}</span><br>
+			<span>{{itemEffect}}</span>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row no-print" style="margin: 10px; ">
 		<div class="col-md-2">
 			<form data-ng-submit="saveCharacter()" >
-				<input type="submit" value="Save" />
+				<input type="submit" value="Save" class="btn btn-primary" />
 			</form>
 		</div>
 		<div class="col-md-2">
 			<form data-ng-submit="loadCharacter()" >
-				<input type="submit" value="Load" />
+				<input type="submit" value="Load" class="btn btn-primary" />
 			</form>
 		</div>
 		<div class="col-md-2">
-
 			<select ng-model="loadName" ng-options="n for n in names " 
 				style="width: 100%">
 			</select>

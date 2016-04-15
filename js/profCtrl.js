@@ -31,15 +31,32 @@
 		$scope.rankChange();
 	};
 	
+	$scope.itemInfo = '';
+	$scope.itemEffect = '';
+	$scope.itemChange = function() {
+		var item =  $scope.selectedItem;
+		if(!item.Effect) {
+			$scope.itemInfo = "";
+			return false;
+		}
+		if(!item.Mass) item.Mass = 1;
+		$scope.itemInfo = 'Cost: ' + item.Cost;
+		if(item.Mass) $scope.itemInfo += ', Mass: ' + item.Mass; 
+		if(item.Req) $scope.itemInfo += ', Rq#: ' + item.Req;
+		if(item.Energized) $scope.itemInfo += ', Energized: ' + item.Energized;
+		$scope.itemEffect = 'Effect: ' + item.Effect
+		//console.log(item);
+	};
+
+
     $scope.species = $http.get('http://sergio1202.github.io/js/species.json').success(function(data) {
 		$scope.species = data;
     });
 
-    $scope.equpment = $http.get('http://sergio1202.github.io/js/equipment.json').success(function(data) {
+    $scope.equipment = $http.get('http://sergio1202.github.io/js/equipment.json').success(function(data) {
 		$scope.equipment = data;
     });
-
-
+	
 	$scope.items = [];
     for (var i = 1; i < 18; i++) {
         $scope.items.push({
@@ -70,7 +87,7 @@
 			alert("missing name");
 			return;
 		}
-		console.log("name: " + $scope.name);
+		//console.log("name: " + $scope.name);
 		var stats = {};
 		stats["name"] = $scope.name;
 		stats["rank"] = $scope.rank;
@@ -109,6 +126,29 @@
 			$scope.selectedSpecies = $scope.saved[name]['selectedSpecies'];
 			$scope.notes = $scope.saved[name]['notes'];
 		}
+	};
+	
+	$scope.addItem = function () {
+		var added = false;
+		$.each($scope.items, function( index, value ) {
+			var item = $scope.selectedItem;
+			if(!item) {
+				alert("select an item");
+				console.log("no item selected");
+				return false;
+			}
+			//console.log($scope.selectedItem);
+			if(!value.name && !added) {
+				added = true;
+				//console.log( "adding to " + index + ", " + value.Name );
+				$scope.items[index].name = item.Name;
+				$scope.items[index].mass = Number(item.Mass);
+				
+				//console.log($scope.items[index]);
+				return false;
+			}
+			console.log(  index );
+});
 	};
 	
 

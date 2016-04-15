@@ -3,972 +3,965 @@
  	"Cost": "600",
  	"Mass": "7",
  	"Energized": "y",
- 	"rq#": "10",
+ 	"Req": "10",
  	"Effect": "1d6 damage (ignore Damage Reduction).  Area Effect (indirect)."
  }, {
  	"Name": "Blaster",
  	"Cost": "250",
  	"Mass": "4",
  	"Energized": "y",
- 	"rq#": "8",
+ 	"Req": "8",
  	"Effect": "2d6-1 damage"
  }, {
  	"Name": "Disintegrator",
  	"Cost": "550",
  	"Mass": "9",
  	"Energized": "y",
- 	"rq#": "10",
+ 	"Req": "10",
  	"Effect": "1d6 damage and Athletics check of 8 or disintegrate"
  }, {
  	"Name": "EMP Pistol",
  	"Cost": "300",
  	"Mass": "5",
  	"Energized": "y",
- 	"rq#": "8",
+ 	"Req": "8",
  	"Effect": "Disables all of target's cyberware or one piece of equipment"
  }, {
  	"Name": "Flyntlock",
  	"Cost": "25",
  	"Mass": "2",
  	"Energized": "n",
- 	"rq#": "-",
+ 	"Req": "-",
  	"Effect": "2d6 damage (breaks itself after each use)"
  }, {
  	"Name": "Froster",
  	"Cost": "100",
  	"Mass": "3",
  	"Energized": "y",
- 	"rq#": "7",
+ 	"Req": "7",
  	"Effect": "Combat vs 8 to frost target square and each adjacent square."
  }, {
  	"Name": "Ion Bore",
  	"Cost": "450",
  	"Mass": "9",
  	"Energized": "y",
- 	"rq#": "11",
+ 	"Req": "11",
  	"Effect": " Raises ionization level. 1d6 per ionization level (max 4d6)"
  }, {
  	"Name": "Laser Monocle",
  	"Cost": "200",
  	"Mass": "1",
  	"Energized": "y",
- 	"rq#": "10",
+ 	"Req": "10",
  	"Effect": "1 pt damage doesn't require a hand. Ignores Damage Reduction."
  }, {
  	"Name": "Laser",
  	"Cost": "300",
  	"Mass": "5",
  	"Energized": "y",
- 	"rq#": "9",
+ 	"Req": "9",
  	"Effect": "1d6 +1 Ignores damage reduction. +1 skill check to use."
  }, {
  	"Name": "Micro Blaster",
  	"Cost": "150",
  	"Mass": "2",
  	"Energized": "y",
- 	"rq#": "8",
+ 	"Req": "8",
  	"Effect": "1 d6 + 1 point. + 3 to quickdraw, -1 to shoot with if quickdrawn."
  }, {
  	"Name": "Needler",
  	"Cost": "300",
  	"Mass": "4",
  	"Energized": "n",
- 	"rq#": "9",
+ 	"Req": "9",
  	"Effect": "Holds 1 needler toxin type. Add Damage Reduction to Target #"
  }, {
  	"Name": "Needler Mag.",
  	"Cost": "100",
  	"Mass": "*",
  	"Energized": "n",
- 	"rq#": "10",
+ 	"Req": "10",
  	"Effect": "Mass 1/toxin"
  }, {
  	"Name": "Nerve Disruptor",
  	"Cost": "300",
  	"Mass": "5",
  	"Energized": "y",
- 	"rq#": "9",
+ 	"Req": "9",
  	"Effect": "2 d6 - 4. If any damage gets through, target drops everything."
  }, {
  	"Name": "Particle Gun",
  	"Cost": "800",
  	"Mass": "5",
  	"Energized": "y",
- 	"rq#": "11",
+ 	"Req": "11",
  	"Effect": "1d6 + successes damage (max 5)"
  }, {
  	"Name": "Plasma Bolt",
  	"Cost": "950",
  	"Mass": "8",
  	"Energized": "y",
- 	"rq#": "12",
+ 	"Req": "12",
  	"Effect": "Combat vs .11, 1 d6 fire target square and each adj.Dangerous."
  }, {
  	"Name": "Plasma Gun",
  	"Cost": "300",
  	"Mass": "6",
  	"Energized": "y",
- 	"rq#": "9",
+ 	"Req": "9",
  	"Effect": "1d6 Fire damage. Dangerous. Doubles damages you."
  }, {
  	"Name": "Plasma Projector",
  	"Cost": "1100",
  	"Mass": "12",
  	"Energized": "y",
- 	"rq#": "12",
+ 	"Req": "12",
  	"Effect": "1d6 fire Area of Effect.  Dangerous "
  }, {
  	"Name": "Rocket Pistol",
  	"Cost": "500",
  	"Mass": "2",
  	"Energized": "n*",
- 	"rq#": "13",
+ 	"Req": "13",
  	"Effect": "Launches Grenades. Target # = distance +3. Requires load action. *Loaded grenades might be energized."
  }, {
  	"Name": "Slug Mach Gun",
  	"Cost": "750",
  	"Mass": "15",
  	"Energized": "n",
- 	"rq#": "12",
+ 	"Req": "12",
  	"Effect": "Slug gun area of effect."
  }, {
  	"Name": "Slug Pistol",
  	"Cost": "150",
  	"Mass": "5",
  	"Energized": "n",
- 	"rq#": "8",
+ 	"Req": "8",
  	"Effect": "Select one type of ammo before mission."
  }, {
  	"Name": "Slug Drum",
  	"Cost": "50",
  	"Mass": "2",
  	"Energized": "n",
- 	"rq#": "7",
+ 	"Req": "7",
  	"Effect": "Choose which bullets your Slug gun is shooting"
  }, {
  	"Name": "Sonic Beam",
  	"Cost": "400",
  	"Mass": "4",
  	"Energized": "y",
- 	"rq#": "8",
+ 	"Req": "8",
  	"Effect": "Indirect, Area of Effect, 1 d6 damage, Ignore DR, Safe, Dangerous"
  }, {
  	"Name": "Stun Gun",
  	"Cost": "200",
  	"Mass": "3",
  	"Energized": "y",
- 	"rq#": "8",
+ 	"Req": "8",
  	"Effect": "Target makes Athletics check of 11. Stunned for difference."
  }, {
  	"Name": "Voltrex",
  	"Cost": "675",
  	"Mass": "10",
  	"Energized": "y",
- 	"rq#": "13",
+ 	"Req": "13",
  	"Effect": "1 d6, up to 3 targets, -#of targets to shoot, doubles jams."
  }, {
  	"Name": "Heavy Ranged",
  	"Cost": "Cost",
  	"Mass": "Mass",
  	"Energized": "Energized",
- 	"rq#": "rq#",
+ 	"Req": "Req",
  	"Effect": "Damage/effect (REQUIRES ARMORY)"
  }, {
  	"Name": "Heavy Blaster",
  	"Cost": "750",
  	"Mass": "75",
  	"Energized": "y",
- 	"rq#": "10",
+ 	"Req": "10",
  	"Effect": "3d6-2"
  }, {
  	"Name": "Heavy Disruptor",
  	"Cost": "850",
  	"Mass": "75",
  	"Energized": "y",
- 	"rq#": "11",
+ 	"Req": "11",
  	"Effect": "3d6-5 any damage causes target to drop all carried items"
  }, {
  	"Name": "Heavy Ion Bore",
  	"Cost": "900",
  	"Mass": "75",
  	"Energized": "y",
- 	"rq#": "12",
+ 	"Req": "12",
  	"Effect": "2d6 +ionization level dice of damage (max 5d6)"
  }, {
  	"Name": "Heavy Laser",
  	"Cost": "650",
  	"Mass": "75",
  	"Energized": "y",
- 	"rq#": "12",
+ 	"Req": "12",
  	"Effect": "2 d6 damage, ignore Damage Reduction"
  }, {
  	"Name": "Heavy Particle Gun",
  	"Cost": "1500",
  	"Mass": "75",
  	"Energized": "y",
- 	"rq#": "14",
+ 	"Req": "14",
  	"Effect": "2 d6, Each success does + 1 damage, max 6 "
  }, {
  	"Name": "Heavy Slug Gun",
  	"Cost": "500",
  	"Mass": "75",
  	"Energized": "n",
- 	"rq#": "14",
+ 	"Req": "14",
  	"Effect": "d6 + 3 damage, ignore Damage Reduction."
  }, {
  	"Name": "Heavy Slug Machine",
  	"Cost": "700",
  	"Mass": "75",
  	"Energized": "n",
- 	"rq#": "14",
+ 	"Req": "14",
  	"Effect": "3x successes to determine area of effect."
  }, {
  	"Name": "Melee",
  	"Cost": "Cost",
  	"Mass": "Mass",
  	"Energized": "Energized",
- 	"rq#": "rq#",
+ 	"Req": "Req",
  	"Effect": "Effect"
  }, {
  	"Name": "Butt",
  	"Cost": "100",
  	"Mass": "5",
  	"Energized": "n",
- 	"rq#": "5",
+ 	"Req": "5",
  	"Effect": "Adds 5 to range band and can be used as club for 1d6 melee"
  }, {
  	"Name": "EMP Baton",
  	"Cost": "100",
  	"Mass": "3",
  	"Energized": "y",
- 	"rq#": "7",
+ 	"Req": "7",
  	"Effect": "Melee EMP weapon"
  }, {
  	"Name": "Energy Blade",
  	"Cost": "1300",
  	"Mass": "8",
  	"Energized": "y",
- 	"rq#": "14",
+ 	"Req": "14",
  	"Effect": "3d6-3 damage. 1/6 break module. Dangerous"
  }, {
  	"Name": "Energy Cutlass",
  	"Cost": "900",
  	"Mass": "6",
  	"Energized": "y",
- 	"rq#": "13",
+ 	"Req": "13",
  	"Effect": "2d6-1 dam. 1/6 chance break optional.  Dangerous"
  }, {
  	"Name": "Fist",
  	"Cost": "-",
  	"Mass": "-",
  	"Energized": "n",
- 	"rq#": "-",
+ 	"Req": "-",
  	"Effect": "1d6 damage (max = Athletics)"
  }, {
  	"Name": "Heavy Object",
  	"Cost": "-",
  	"Mass": "-",
  	"Energized": "n",
- 	"rq#": "-",
+ 	"Req": "-",
  	"Effect": "1d6 damage (max = Athletics +1)"
  }, {
  	"Name": "Ion Hammer",
  	"Cost": "300",
  	"Mass": "10",
  	"Energized": "y",
- 	"rq#": "10",
+ 	"Req": "10",
  	"Effect": "Melee Ion Bore 1d6 damage cumulative (max 4d6)"
  }, {
  	"Name": "Knife",
  	"Cost": "5",
  	"Mass": "2",
  	"Energized": "n",
- 	"rq#": "-",
+ 	"Req": "-",
  	"Effect": "1d6 damage."
  }, {
  	"Name": "Lightning Rod",
  	"Cost": "325",
  	"Mass": "5",
  	"Energized": "y",
- 	"rq#": "9",
+ 	"Req": "9",
  	"Effect": "1d6 damage and Stun Effect.  Dangerous"
  }, {
  	"Name": "Monomolecular Blade",
  	"Cost": "500",
  	"Mass": "9",
  	"Energized": "y",
- 	"rq#": "9",
+ 	"Req": "9",
  	"Effect": "1d6 +successes damage (max 6)"
  }, {
  	"Name": "Phase Pick",
  	"Cost": "300",
  	"Mass": "10",
  	"Energized": "y",
- 	"rq#": "8",
+ 	"Req": "8",
  	"Effect": "Melee Disintegrator"
  }, {
  	"Name": "Plasma Dagger",
  	"Cost": "275",
  	"Mass": "5",
  	"Energized": "y",
- 	"rq#": "8",
+ 	"Req": "8",
  	"Effect": "Roll 2d6 fire damage and count either one.  Dangerous"
  }, {
  	"Name": "PortaRam",
  	"Cost": "200",
  	"Mass": "5",
  	"Energized": "n",
- 	"rq#": "8",
+ 	"Req": "8",
  	"Effect": "1d6 damage. Athletics skill check of 11 to bust a door open."
  }, {
  	"Name": "Stun Stick",
  	"Cost": "250",
  	"Mass": "3",
  	"Energized": "y",
- 	"rq#": "7",
+ 	"Req": "7",
  	"Effect": "Target Athletics check vs 11. Difference = stun markers."
  }, {
  	"Name": "Sword",
  	"Cost": "10",
  	"Mass": "4",
  	"Energized": "n",
- 	"rq#": "-",
+ 	"Req": "-",
  	"Effect": "2d6-2 damage."
  }, {
  	"Name": "Vibraknife",
  	"Cost": "250",
  	"Mass": "4",
  	"Energized": "y",
- 	"rq#": "8",
+ 	"Req": "8",
  	"Effect": "1d6 damage. Ignore Damage Reduction"
  }, {
  	"Name": "Explosives",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "Energized",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Effect"
  }, {
- 	"Name": "Grenades",
- 	"Cost": "",
- 	"Mass": "",
- 	"Energized": "",
- 	"rq#": "",
- 	"Effect": "Cost 25  mass 1 for all grenades"
- }, {
  	"Name": "Disintegration",
- 	"Cost": "",
+ 	"Cost": "25",
  	"Mass": "",
  	"Energized": "y",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "L.O.S. Up to 6 squares Athletics vs 8 disintegrated.  Treasure Item"
  }, {
  	"Name": "Emp",
- 	"Cost": "",
+ 	"Cost": "25",
  	"Mass": "",
  	"Energized": "y",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "EMP all energized equipment and cyberware in L.O.S."
  }, {
  	"Name": "Energy",
- 	"Cost": "",
+ 	"Cost": "25",
  	"Mass": "",
  	"Energized": "y",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "2d6 damage"
  }, {
  	"Name": "Flare",
- 	"Cost": "",
+ 	"Cost": "25",
  	"Mass": "",
  	"Energized": "y",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Makes person or object holding +3 to be targeted"
  }, {
  	"Name": "Frag.",
- 	"Cost": "",
+ 	"Cost": "25",
  	"Mass": "",
  	"Energized": "n",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "2d6-1 damage"
  }, {
  	"Name": "Fritzer",
- 	"Cost": "",
+ 	"Cost": "25",
  	"Mass": "",
  	"Energized": "y",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "1d6 personal damge Roll 4d6 to break module"
  }, {
  	"Name": "FrostBomb",
- 	"Cost": "",
+ 	"Cost": "25",
  	"Mass": "",
  	"Energized": "y",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Frost effect on all in L.O.S."
  }, {
  	"Name": "Gas",
- 	"Cost": "",
+ 	"Cost": "25",
  	"Mass": "",
  	"Energized": "n",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Contains needler toxin. All in cloud affected as if shot by needler"
  }, {
  	"Name": "Ion Grenade",
- 	"Cost": "",
+ 	"Cost": "25",
  	"Mass": "",
  	"Energized": "y",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "No damage but all in L.O.S. have ionization level raised by one."
  }, {
  	"Name": "Neutron Grenade",
- 	"Cost": "",
+ 	"Cost": "25",
  	"Mass": "",
  	"Energized": "y",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "No damage to modules, equipment.Every organic being in L.O.S.�Oucho� ed."
  }, {
  	"Name": "Plasma",
- 	"Cost": "",
+ 	"Cost": "25",
  	"Mass": "",
  	"Energized": "y",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "1d6 fire damage to all in L.O.S. And within 6 squares."
  }, {
  	"Name": "Stun",
- 	"Cost": "",
+ 	"Cost": "25",
  	"Mass": "",
  	"Energized": "y",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "All in L.O.S. make passive Athletics vs.11. Difference is stun markers."
  }, {
  	"Name": "Satchel charge",
- 	"Cost": "",
- 	"Mass": "",
+ 	"Cost": "50",
+ 	"Mass": "3",
  	"Energized": "y",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "1 d6 hull .4, 5, 6 breaks module .2 D6 personal damage.Mass 3, Cost 50"
  }, {
  	"Name": "General equipment",
  	"Cost": "Cost",
  	"Mass": "Mass",
  	"Energized": "Energized",
- 	"rq#": "rq#",
+ 	"Req": "Req",
  	"Effect": "Effect"
  }, {
  	"Name": "Armor",
  	"Cost": "200",
  	"Mass": "10",
  	"Energized": "n",
- 	"rq#": "8",
+ 	"Req": "8",
  	"Effect": "Stops 1 point of damage. Many species cannot wear armor."
  }, {
  	"Name": "Bandage",
  	"Cost": "10",
  	"Mass": "1",
  	"Energized": "-",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Heal 1 point of damage with a Science check vs. 8."
  }, {
  	"Name": "Barrel",
  	"Cost": "?",
  	"Mass": "100",
  	"Energized": "n",
- 	"rq#": "-",
+ 	"Req": "-",
  	"Effect": "Holds stuff"
  }, {
  	"Name": "Bayonet clip",
  	"Cost": "50",
  	"Mass": "2",
  	"Energized": "n",
- 	"rq#": "-",
+ 	"Req": "-",
  	"Effect": "Allows clipping a melee weapon to ranged weapon"
  }, {
  	"Name": "Bipod",
  	"Cost": "50",
  	"Mass": "2",
  	"Energized": "n",
- 	"rq#": "-",
+ 	"Req": "-",
  	"Effect": "If setup, bipod adds + 1 to Combat checks and + 10 to Range"
  }, {
  	"Name": "Bot",
  	"Cost": "1500",
  	"Mass": "100",
  	"Energized": "y",
- 	"rq#": "-",
+ 	"Req": "-",
  	"Effect": "Bots are provided free to UREF vessels see page xxx."
  }, {
  	"Name": "Electrocuffs",
  	"Cost": "25",
  	"Mass": "2",
  	"Energized": "y",
- 	"rq#": "-",
+ 	"Req": "-",
  	"Effect": "Cuffed has hands full and is overburdened"
  }, {
  	"Name": "EVA",
  	"Cost": "100",
  	"Mass": "4",
  	"Energized": "y",
- 	"rq#": "8",
+ 	"Req": "8",
  	"Effect": "Allows 100 phases of life support if in hand or strapped on."
  }, {
  	"Name": "False Bottom Barrel",
  	"Cost": "100",
  	"Mass": "100",
  	"Energized": "n",
- 	"rq#": "X",
+ 	"Req": "X",
  	"Effect": "Used to conceal contraband to make it appear as barrels"
  }, {
  	"Name": "GravSled",
  	"Cost": "100",
  	"Mass": "10",
  	"Energized": "y",
- 	"rq#": "9",
+ 	"Req": "9",
  	"Effect": "+100 mass Carry -1 move. Requires a hand."
  }, {
  	"Name": "HazMat Suit",
  	"Cost": "300",
  	"Mass": "10",
  	"Energized": "n",
- 	"rq#": "10",
+ 	"Req": "10",
  	"Effect": "+3 to Athletics checks to avoid hazardous effects. -1 Move"
  }, {
  	"Name": "JetPack",
  	"Cost": "500",
  	"Mass": "4",
  	"Energized": "y",
- 	"rq#": "12",
+ 	"Req": "12",
  	"Effect": "See Piloting. Upgrade adds +1 to piloting skill check to use."
  }, {
  	"Name": "MagBoots",
  	"Cost": "150",
  	"Mass": "4",
  	"Energized": "Y",
- 	"rq#": "8",
+ 	"Req": "8",
  	"Effect": "Allows movement along hull without penalties"
  }, {
  	"Name": "MedKit",
  	"Cost": "250",
  	"Mass": "5",
  	"Energized": "y",
- 	"rq#": "8",
+ 	"Req": "8",
  	"Effect": "Science Skill check vs. 11 to heal 1 die of damage."
  }, {
  	"Name": "Module Upgrade",
  	"Cost": "1500",
  	"Mass": "100",
  	"Energized": "n",
- 	"rq#": "X",
+ 	"Req": "X",
  	"Effect": "This Barrel required for ship's upgrades in some campaigns."
  }, {
  	"Name": "Pack",
  	"Cost": "10",
  	"Mass": "2",
  	"Energized": "n",
- 	"rq#": "-",
+ 	"Req": "-",
  	"Effect": "Packed objects have � mass but 2 actions to ready."
  }, {
  	"Name": "Personal Upgrade",
  	"Cost": "1/2 price",
  	"Mass": "2",
  	"Energized": "n",
- 	"rq#": "-",
+ 	"Req": "-",
  	"Effect": "This kit required for upgrades in some campaigns."
  }, {
  	"Name": "Scope",
  	"Cost": "25",
  	"Mass": "1",
  	"Energized": "n",
- 	"rq#": "-",
+ 	"Req": "-",
  	"Effect": "Adds +5 to Range increment."
  }, {
  	"Name": "Shield",
  	"Cost": "100",
  	"Mass": "10",
  	"Energized": "n",
- 	"rq#": "9",
+ 	"Req": "9",
  	"Effect": "Add +1 to target number."
  }, {
  	"Name": "Shield, Hvy",
  	"Cost": "150",
  	"Mass": "20",
  	"Energized": "n",
- 	"rq#": "10",
+ 	"Req": "10",
  	"Effect": "As above but adds +2 to target number. Upgrade weighs 10."
  }, {
  	"Name": "Toolkit",
  	"Cost": "100",
  	"Mass": "5",
  	"Energized": "y",
- 	"rq#": "8",
+ 	"Req": "8",
  	"Effect": "Add +1 on Engineering Skill checks to upgrade or repair."
  }, {
  	"Name": "Wristcomp",
  	"Cost": "1000",
  	"Mass": "1",
  	"Energized": "y",
- 	"rq#": "13",
+ 	"Req": "13",
  	"Effect": "+1 on Science checks to hack or upgrade."
  }, {
  	"Name": "Drugs",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Effect"
  }, {
  	"Name": "Patches",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Drug patch technology mass +1 but need not be in hand."
  }, {
  	"Name": "Aggro*",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Combat skill boost"
  }, {
  	"Name": "Charme*",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Diplomacy skill boost"
  }, {
  	"Name": "Detox",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Eliminate all drugs and toxins in the recipient's system."
  }, {
  	"Name": "Dull*",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "-1 point of damage per die."
  }, {
  	"Name": "Equilout*",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Ignore OOC."
  }, {
  	"Name": "FlyBoy*",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Piloting skill boost"
  }, {
  	"Name": "Numb",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "May Reroll highest damage die you suffer and highest skill check die you roll."
  }, {
  	"Name": "Psyke!*",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Psionics drug (treasure item)"
  }, {
  	"Name": "RadZene",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Reduces the damage levels of radiation but deals 1d6 damage. This damage is not healable until the end of the campaign turn."
  }, {
  	"Name": "Roid*",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Athletics. +50 to your Carry and +1 melee damage."
  }, {
  	"Name": "Stim*",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "+3 to movement even if unconscious or dying (up to -20 hp)"
  }, {
  	"Name": "StunGone",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Reroll vs stun effects. Athletics check of 11 or be stunned when administered."
  }, {
  	"Name": "SupSci*",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Science skill boost"
  }, {
  	"Name": "TecKnow*",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Engineering skill boost"
  }, {
  	"Name": "TOXINS",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "for gas grenades, needlers"
  }, {
  	"Name": "Choke",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Target loses access to Life Support. (Gas only)"
  }, {
  	"Name": "Goof",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Target must reroll the highest die of each active skill check."
  }, {
  	"Name": "Ionizer",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Raise the target's ionization level by one."
  }, {
  	"Name": "Kayo",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Athletics check of 9 or knocked out until damaged."
  }, {
  	"Name": "Nervo",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Target makes Athletics check of 11 or drops everything in hand."
  }, {
  	"Name": "Oucho",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Target suffers 1d6-1 damage at the end of each phase."
  }, {
  	"Name": "Paino",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Target takes +2 points per die from all dice-based damage sources."
  }, {
  	"Name": "Slowgo",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Target's move attribute is reduced to 1."
  }, {
  	"Name": "Stun",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Athletics check of 11. Failure = stun markers"
  }, {
  	"Name": "Suscepto",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Target must reroll the highest die of any otherwise successful Athletics check"
  }, {
  	"Name": "Zoink",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Target a piece of equipment, bot or all of a character 's cyberware to EMP them. Not a gas."
  }, {
  	"Name": "Cyberware",
  	"Cost": "Cost",
  	"Mass": "Mass",
  	"Energized": "Energized",
- 	"rq#": "rq#",
+ 	"Req": "Req",
  	"Effect": "Effect"
  }, {
  	"Name": "Chip",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": "Upgraded chips weigh � as much."
  }, {
  	"Name": "Athletics Skill",
  	"Cost": "1000",
  	"Mass": "2",
  	"Energized": "y",
- 	"rq#": "13",
+ 	"Req": "13",
  	"Effect": "Adds +1 to Athletics skill checks (not hit points or carry)"
  }, {
  	"Name": "Combat Skill",
  	"Cost": "1000",
  	"Mass": "2",
  	"Energized": "y",
- 	"rq#": "13",
+ 	"Req": "13",
  	"Effect": "Adds +1 to Combat skill checks"
  }, {
  	"Name": "Diplomacy Skill",
  	"Cost": "1000",
  	"Mass": "2",
  	"Energized": "y",
- 	"rq#": "13",
+ 	"Req": "13",
  	"Effect": "Adds +1 to Diplomacy skill checks"
  }, {
  	"Name": "Engineering Skill",
  	"Cost": "1000",
  	"Mass": "2",
  	"Energized": "y",
- 	"rq#": "13",
+ 	"Req": "13",
  	"Effect": "Adds +1 to Engineering skill checks"
  }, {
  	"Name": "Mentor",
  	"Cost": "500",
  	"Mass": "2",
  	"Energized": "y",
- 	"rq#": "12",
+ 	"Req": "12",
  	"Effect": "Add +10% experience gained"
  }, {
  	"Name": "Piloting Skill",
  	"Cost": "1000",
  	"Mass": "2",
  	"Energized": "y",
- 	"rq#": "13",
+ 	"Req": "13",
  	"Effect": "Adds +1 to Piloting skill checks"
  }, {
  	"Name": "Psionics Skill",
  	"Cost": "1000",
  	"Mass": "2",
  	"Energized": "y",
- 	"rq#": "x",
+ 	"Req": "x",
  	"Effect": "Treasure Item Only"
  }, {
  	"Name": "Sanity Skill",
  	"Cost": "1000",
  	"Mass": "2",
  	"Energized": "y",
- 	"rq#": "13",
+ 	"Req": "13",
  	"Effect": "Adds +1 to Sanity skill checks"
  }, {
  	"Name": "Science Skill",
  	"Cost": "1000",
  	"Mass": "2",
  	"Energized": "y",
- 	"rq#": "13",
+ 	"Req": "13",
  	"Effect": "Adds +1 to Science skill checks"
  }, {
  	"Name": "",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": ""
  }, {
  	"Name": "AutoNurse",
  	"Cost": "500",
  	"Mass": "6",
  	"Energized": "y",
- 	"rq#": "12",
+ 	"Req": "12",
  	"Effect": "+1 point of healing per die."
  }, {
  	"Name": "Cyberfoot",
  	"Cost": "2000",
  	"Mass": "8",
  	"Energized": "y",
- 	"rq#": "15",
+ 	"Req": "15",
  	"Effect": "+1 move."
  }, {
  	"Name": "Cybergyros",
  	"Cost": "1000",
  	"Mass": "10",
  	"Energized": "y",
- 	"rq#": "13",
+ 	"Req": "13",
  	"Effect": "Treat OOC for you as one lower."
  }, {
  	"Name": "Cyberhand",
  	"Cost": "2500",
  	"Mass": "6",
  	"Energized": "y",
- 	"rq#": "16",
+ 	"Req": "16",
  	"Effect": "+1 hand."
  }, {
  	"Name": "",
  	"Cost": "",
  	"Mass": "",
  	"Energized": "",
- 	"rq#": "",
+ 	"Req": "",
  	"Effect": ""
  }, {
  	"Name": "Cyberhook",
  	"Cost": "500",
  	"Mass": "8",
  	"Energized": "y",
- 	"rq#": "12",
+ 	"Req": "12",
  	"Effect": "Built in vibrakife (1d6 damage). Other actions with it at -1"
  }, {
  	"Name": "Cyberpatch",
  	"Cost": "400",
  	"Mass": "2",
  	"Energized": "y",
- 	"rq#": "10",
+ 	"Req": "10",
  	"Effect": "Reduce remote penalties by 1. Add +1 to Hack."
  }, {
  	"Name": "Discipline Collar",
  	"Cost": "250",
  	"Mass": "6",
  	"Energized": "y",
- 	"rq#": "11",
+ 	"Req": "11",
  	"Effect": "Free reroll as a last roll, suffer 1 d6 damage if it fails."
  }, {
  	"Name": "FiberDerm",
  	"Cost": "1300",
  	"Mass": "10",
  	"Energized": "y",
- 	"rq#": "14",
+ 	"Req": "14",
  	"Effect": "+1 Hit Point and +1 on Athletics based skill checks."
  }, {
  	"Name": "Grounded Network",
  	"Cost": "500",
  	"Mass": "1/",
  	"Energized": "y",
- 	"rq#": "11",
+ 	"Req": "11",
  	"Effect": "De-EMP all your cyberware with one action (mass =1 per)."
  }, {
  	"Name": "MedJack",
  	"Cost": "150",
  	"Mass": "2",
  	"Energized": "y",
- 	"rq#": "8",
+ 	"Req": "8",
  	"Effect": "Carries drugs at half weight. Easier to heal."
  }, {
  	"Name": "Skeletal Enhance",
  	"Cost": "1500",
  	"Mass": "0",
  	"Energized": "y",
- 	"rq#": "15",
+ 	"Req": "15",
  	"Effect": "Increase carry by 10. Upgrade increases carry by 5 more."
  }]
