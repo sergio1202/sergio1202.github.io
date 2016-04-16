@@ -1,5 +1,4 @@
-[
-{
+[{
 	"Name": "Acrobatic",
 	"Description": "You may pop 2 squares instead of one when you “pop” (see page xxx). You may add OOC instead of subtracting it for movement and skill checks for movement.  Add +3 to your target number while moving or popping."
 }, {
@@ -88,7 +87,8 @@
 	"Description": "You are a tricky Scientist. Spend from this pool to do any one of the following as an action at a battlestation. The benefits last until the end of the round.Checkup – add +1 to the Athletics checks of and skill checks on any attempt to heal the crew you flew in with.Focus Sensors – add +1 to any attempt your ship makes to target anything.Tune Shields – add +1 to your effective shields level for inbound attacks but -1 for Teleporting out.Science"
 }, {
 	"Name": "Cross-Class",
-	"Description": "You may choose a new profession. You retain a pool of 4 rerolls to use in your previous profession. You may even select this as your starting ability. If you later retrain this ability out, you lose the 4 rerolls but keep your new profession.4"
+	"Description": "You may choose a new profession. You retain a pool of 4 rerolls to use in your previous profession. You may even select this as your starting ability. If you later retrain this ability out, you lose the 4 rerolls but keep your new profession.",
+	"Pool": "4"
 }, {
 	"Name": "Cut-Throat",
 	"Description": "You've got an uncanny knack for dealing personal damage to a victim. You may spend from this pool to reroll a damage die you deal directly in personal combat.",
@@ -221,7 +221,8 @@
 	"Description": ""
 }, {
 	"Name": "“And now for my next trick...",
-	"Description": "I blow you up!”HardenedSpend from this pool to reroll a die that deals damage to you.6HealerWhenever you heal anybody for at least one die, heal them for an additional die."
+	"Description": "I blow you up!”HardenedSpend from this pool to reroll a die that deals damage to you.",
+	"Pool": "6HealerWhenever you heal anybody for at least one die, heal them for an additional die."
 }, {
 	"Name": "Helpful",
 	"Description": "You may let others spend your luck as if it were their own. You get a reroll on all attempts to assist."
@@ -407,7 +408,8 @@
 	"Description": "You've got your bearings. You may consider OOC 2 levels lower for all purposes (minimum of zero). You may select this ability twice to ignore OOC entirely."
 }, {
 	"Name": "Spacer",
-	"Description": "You know your way around a starship. You may spend from this pool on any skill check.4"
+	"Description": "You know your way around a starship. You may spend from this pool on any skill check.",
+	"Pool": "4"
 }, {
 	"Name": "Speed Demon",
 	"Description": "You may spend from this pool to reroll any attempt to accelerate, decelerate or stall a starship or move in a fighter.",
@@ -473,7 +475,8 @@
 	"Description": "Your vast experience has developed your cool nerve and an uncanny ability to ignore distraction. You may choose to ignore a total of up to -3 in penalties each time you use this ability. You cannot apply this ability more than once to a given action.Rank"
 }, {
 	"Name": "Uniminded (Psionic) L.O.S.",
-	"Description": "You may use an ally's skill instead of your own as long as that ally is within Line Of Sight.4"
+	"Description": "You may use an ally's skill instead of your own as long as that ally is within Line Of Sight.",
+	"Pool": "4"
 }, {
 	"Name": "Unlimited",
 	"Description": "Once per campaign turn, you may reset up to two of your special abilities to their starting values as if it were the start of the campaign turn. This does not apply to single use abilities such as adaptable."
@@ -482,7 +485,8 @@
 	"Description": "At the start of your turn in a phase, roll a die (luckable) to see which random skill will be easier for you this phase. (1=Athletics, 2= Combat, 3= Engineering, 4= Piloting, 5= Science, 6= your choice).  Actions you take this turn in the chosen skill will be at +1 with a free reroll."
 }, {
 	"Name": "Unsinkable",
-	"Description": "Ships you are on are tough to bring down. You may spend from this pool to reroll one die of a failed hull check of a ship or survival check of a microship you are aboard or your own personal Athletics checks to avoid disintegration.10"
+	"Description": "Ships you are on are tough to bring down. You may spend from this pool to reroll one die of a failed hull check of a ship or survival check of a microship you are aboard or your own personal Athletics checks to avoid disintegration.",
+	"Pool": "10"
 }, {
 	"Name": "Wake Rider",
 	"Description": "Explosion dice that would damage your microship move you one hex directly away from the epicenter instead  for each level of explosion. You get your choice of direction if you are in the hex of explosion origination.Also, once per phase you may do one of the following:When you move as your move action, friendly fighters and drones that have not yet moved this turn may spend their move action to move with you without making a pilot check for distance.orWhen another fighter, installation, or ship moves, you may move with it as a free action. This does not expend your move action."
