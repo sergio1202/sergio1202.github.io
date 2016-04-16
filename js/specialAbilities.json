@@ -39,16 +39,33 @@
 	"Description": "You may reroll one of the dice each time you deal personal damage with a direct attack (not grenades, area effect, or ship's weapons)."
 }, {
 	"Name": "Calm",
-	"Description": "You've been through worse situations than this one. Due to your steely nerve, you may opt to take an “8” on a skill check instead of (and before) rolling the dice.Rank x2Cannon ExpertYou've got a knack for the cannon.  You get a free reroll on each skill check you make to attack with, repair, or reconfigure the cannon module. You can reconfigure a cannon as a free action once per phase."
+	"Description": "You've been through worse situations than this one. Due to your steely nerve, you may opt to take an “8” on a skill check instead of (and before) rolling the dice.",
+	"Pool": "Rank x2"
+}, {
+	"Name": "Cannon Expert",
+	"Description": "You've got a knack for the cannon.  You get a free reroll on each skill check you make to attack with, repair, or reconfigure the cannon module. You can reconfigure a cannon as a free action once per phase."
 }, {
 	"Name": "Cannon Specialist",
-	"Description": "You've mastered the use of the cannon.  You may spend from this pool to reroll attacks with a cannon or checks to reconfigure or repair a cannon module.Combat x2Cargo Bay SpecialistYou get a pool of rerolls to use when operating, upgrading, installing, uninstalling, or repairing any Cargo Bay item.Engineering x2Cerebral Conduit (Free Action) PsionicYou may spend from this pool to re-allocate your ship's power as a free action at any point during your turn from anywhere aboard your ship.Engineering + Psionics"
+	"Description": "You've mastered the use of the cannon.  You may spend from this pool to reroll attacks with a cannon or checks to reconfigure or repair a cannon module.",
+	"Pool": "Combat x2"
+}, {
+	"Name": "Cargo Bay Specialist",
+	"Description": "You get a pool of rerolls to use when operating, upgrading, installing, uninstalling, or repairing any Cargo Bay item.",
+	"Pool": "Engineering x2"
+}, {
+	"Name": "Cerebral Conduit (Free Action) Psionic",
+	"Description": "You may spend from this pool to re-allocate your ship's power as a free action at any point during your turn from anywhere aboard your ship.",
+	"Pool": "Engineering + Psionics"
 }, {
 	"Name": "Charger",
 	"Description": "Once per phase, you may make a free unarmed (or natural weapon) melee attack at the end of your Move Action at a penalty of -3 on the skill check."
 }, {
 	"Name": "Cloak Expert",
-	"Description": "You ignore used markers on the Cloaking Device. You also get a pool to spend on skill checks to operate or repair the Cloaking Device and to seek cloaked objects.Science x2CoachYou may use Diplomacy instead of the listed skill for your assist actions."
+	"Description": "You ignore used markers on the Cloaking Device. You also get a pool to spend on skill checks to operate or repair the Cloaking Device and to seek cloaked objects.",
+	"Pool": "Science x2"
+}, {
+	"Name": "Coach",
+	"Description": "You may use Diplomacy instead of the listed skill for your assist actions."
 }, {
 	"Name": "Commanding Presence",
 	"Description": "When you use Diplomacy to disorient an opponent in person (not ship to ship), you get a free attempt to disorient each other opponent that is closer than your target."
@@ -59,11 +76,22 @@
 	"Name": "Contortionist",
 	"Description": "You may move and act in slagged squares as though they were not slagged. Your target number is one higher except for grappling. You still may not jet through slagged squares. You also get a reroll on all grappling checks (see page xxx)."
 }, {
+	"Name": "Cortex Overloader (Psionic) L.O.S.",
+	"Description": "Psionics vs. 8(+3 per +1 difficulty)(+3 per additional target)Force a target in Line of Sight to make an Athletics check of 9 or their head implodes (bringing them to -6 hit points). You may increase your difficulty by +3 for each +1 you wish to increase their difficulty. You may also increase by +3 for each additional target you wish to target.",
+	"Pool": "Combat + Psionics"
+}, {
+	"Name": "Courtier",
+	"Description": "You have no difficulties moving or acting in slagged squares. (Jet moves are not allowed in slagged squares). You may allow others to spend your luck.  Your close contact with the queen has allowed you to become immune to the pheromone phever effect in “By Her Majesty's Sacred Egg Sac”."
+}, {
 	"Name": "Crafty",
-	"Description": "You are a tricky Scientist. Spend from this pool to do any one of the following as an action at a battlestation. The benefits last until the end of the round.Checkup – add +1 to the Athletics checks of and skill checks on any attempt to heal the crew you flew in with.Focus Sensors – add +1 to any attempt your ship makes to target anything.Tune Shields – add +1 to your effective shields level for inbound attacks but -1 for Teleporting out.ScienceCross-ClassYou may choose a new profession. You retain a pool of 4 rerolls to use in your previous profession. You may even select this as your starting ability. If you later retrain this ability out, you lose the 4 rerolls but keep your new profession.4"
+	"Description": "You are a tricky Scientist. Spend from this pool to do any one of the following as an action at a battlestation. The benefits last until the end of the round.Checkup – add +1 to the Athletics checks of and skill checks on any attempt to heal the crew you flew in with.Focus Sensors – add +1 to any attempt your ship makes to target anything.Tune Shields – add +1 to your effective shields level for inbound attacks but -1 for Teleporting out.Science"
+}, {
+	"Name": "Cross-Class",
+	"Description": "You may choose a new profession. You retain a pool of 4 rerolls to use in your previous profession. You may even select this as your starting ability. If you later retrain this ability out, you lose the 4 rerolls but keep your new profession.4"
 }, {
 	"Name": "Cut-Throat",
-	"Description": "You've got an uncanny knack for dealing personal damage to a victim. You may spend from this pool to reroll a damage die you deal directly in personal combat.Science x2"
+	"Description": "You've got an uncanny knack for dealing personal damage to a victim. You may spend from this pool to reroll a damage die you deal directly in personal combat.",
+	"Pool": "Science x2"
 }, {
 	"Name": "Death Marcher",
 	"Description": "Add +3 Hit Points. You may take simple move actions when your hit points are reduced to betweeen 0 and -5 (but not take any action even free actions). You “recover” immediately after being healed from unconsciousness (rather than waiting until the end of the phase like everybody else)."
@@ -75,13 +103,20 @@
 	"Description": "As an action, you can make a wild slashing melee attack on multiple targets. If you are using a weapon or ability that extends your reach, all of the targets must be in or adjacent to one of the squares you can reach from. These attacks are direct. You cannot use this ability in conjunction with a two weapon attack or to target modules, equipment, or personal equipment"
 }, {
 	"Name": "Destroyer (Psionic) (Action)",
-	"Description": "Psionics vs. 11Release an energy blast like a satchel charge (page xxx) in the square you are in. You may reroll any damage you would sustain.Athletics + Psionics"
+	"Description": "Psionics vs. 11Release an energy blast like a satchel charge (page xxx) in the square you are in. You may reroll any damage you would sustain.",
+	"Pool": "Athletics + Psionics"
 }, {
 	"Name": "Diplomatic Specialist",
-	"Description": "You have a pool to use when rolling Diplomacy skill checks.Diplomacy x2Dirty FighterWhen you deal personal damage to a target with a direct attack you hit them in a place that counts. They are at a penalty of -3 on all active skill checks until they are fully healed.You also may make a coup de grace attack as an action (see page xxx) without spending the prepare action first.Displaced (Psionic)You may engage this power as a free action even in response to another character's action even after attack dice are thrown. Your personal target number is 3 higher than normal until the end of the Phase. Multiple uses of this power stack.Athletics + Psionics"
+	"Description": "You have a pool to use when rolling Diplomacy skill checks.",
+	"Pool": "Diplomacy x2"
+}, {
+	"Name": "Dirty Fighter",
+	"Description": "When you deal personal damage to a target with a direct attack you hit them in a place that counts. They are at a penalty of -3 on all active skill checks until they are fully healed.You also may make a coup de grace attack as an action (see page xxx) without spending the prepare action first.Displaced (Psionic)You may engage this power as a free action even in response to another character's action even after attack dice are thrown. Your personal target number is 3 higher than normal until the end of the Phase. Multiple uses of this power stack.",
+	"Pool": "Athletics + Psionics"
 }, {
 	"Name": "Doctor",
-	"Description": "Your extensive studies allow you to draw on great knowledge of the healing arts. Spend from this pool to reroll any skill checks to heal, detoxify, diagnose, or otherwise treat a patient or on the resulting healing dice.Science x2"
+	"Description": "Your extensive studies allow you to draw on great knowledge of the healing arts. Spend from this pool to reroll any skill checks to heal, detoxify, diagnose, or otherwise treat a patient or on the resulting healing dice.",
+	"Pool": "Science x2"
 }, {
 	"Name": "Dogfighter",
 	"Description": "Whenever you win a dogfight, your opponent gets a damage marker and must make a survival check before the dice are thrown for your shot if any.You get a free dogfight against any fighter or drone that enters your hex. If you win the dogfight, you get a free shot on them. This shot does not use up your gun for the phase and can be taken even if your guns have been used."
@@ -93,13 +128,22 @@
 	"Description": "As long as you are on an Engine battlestation, You may spend from this pool to allow you to use Engine Power as though it were Luck.Engineering  + Psionics"
 }, {
 	"Name": "EMT",
-	"Description": "Emergency Medical Training makes you always ready to heal. If you have a MedKit in hand, you may spend from this pool to perform a preventative healing action as a free action out of turn on any adjacent target (or yourself) as the damage is dealt. You cannot heal more damage than is dealt. You may use this ability a maximum of once per phase.Combat x2Energy Deflector (Psionic)You may use an energy blade, or energy cutlass, to negate a direct fire personal energy weapon attack against you or that is passing through your square by making a combat skill check of 11. Doubles on this check triggers dangerous effects of your melee weapon. The difficulty of this check goes up by one for each time you've attempted to use this ability in a campaign turn."
+	"Description": "Emergency Medical Training makes you always ready to heal. If you have a MedKit in hand, you may spend from this pool to perform a preventative healing action as a free action out of turn on any adjacent target (or yourself) as the damage is dealt. You cannot heal more damage than is dealt. You may use this ability a maximum of once per phase.",
+	"Pool": "Combat x2"
+}, {
+	"Name": "Energy Deflector (Psionic)",
+	"Description": "You may use an energy blade, or energy cutlass, to negate a direct fire personal energy weapon attack against you or that is passing through your square by making a combat skill check of 11. Doubles on this check triggers dangerous effects of your melee weapon. The difficulty of this check goes up by one for each time you've attempted to use this ability in a campaign turn."
 }, {
 	"Name": "Engine Overloader",
-	"Description": "You know how to make an Engine scream. You may spend from this pool to reduce the difficulty to pump additional power from an engine to +2 per point of power. When you do so, it is as if a satchel charge (page xxx) detonated in your square. This ability cannot be used remotely.Engineering x2"
+	"Description": "You know how to make an Engine scream. You may spend from this pool to reduce the difficulty to pump additional power from an engine to +2 per point of power. When you do so, it is as if a satchel charge (page xxx) detonated in your square. This ability cannot be used remotely.",
+	"Pool": "Engineering x2"
 }, {
 	"Name": "Engine Specialist",
-	"Description": "You know how to manage an engine. You get a pool of rerolls to use when  pumping an engine for power, transferring power, or repairing an engine.Engineering x2EnragedWhen you suffer damage from any enemy source (including but not limited to direct or indirect personal or ships weapons or abilities, etc.), you add +3 to your effective combat skill until the end of the current round."
+	"Description": "You know how to manage an engine. You get a pool of rerolls to use when  pumping an engine for power, transferring power, or repairing an engine.",
+	"Pool": "Engineering x2"
+}, {
+	"Name": "Enraged",
+	"Description": "When you suffer damage from any enemy source (including but not limited to direct or indirect personal or ships weapons or abilities, etc.), you add +3 to your effective combat skill until the end of the current round."
 }, {
 	"Name": "Famous",
 	"Description": "You get a +1 bonus on all Diplomacy checks and add +20% to all prestige awards you get."
@@ -113,6 +157,9 @@
 	"Name": "Fast Talker",
 	"Description": "You may make a Diplomacy action at a -3 penalty as a free action a maximum of once per phase when you do not take another Diplomacy Action in that phase including free diplomacy actions."
 }, {
+	"Name": "A canosian Engineer is in an engine, turning three valves, pulling 2 levers and typing on a keyboard. Power levels on the monitor are climbing and steam is blasting out all over through safety valves. Heat waves are rolling off the equipment.",
+	"Description": ""
+}, {
 	"Name": "Fated",
 	"Description": "You may choose the result of the first and last points of luck you use in a campaign turn instead of rerolling with it."
 }, {
@@ -120,13 +167,15 @@
 	"Description": "You may elect to do surgery when healing an unresisting target. Add  +3 and a reroll to your skill check. Your patient must make an Athletics check of 8 or be brought instantly to dying at -6 hit points."
 }, {
 	"Name": "Fighter Jock",
-	"Description": "You can board, launch, and disembark from fighters as a free action. You also have a pool of rerolls you can use to make Piloting skill checks in a Fighter.Pilot x2"
+	"Description": "You can board, launch, and disembark from fighters as a free action. You also have a pool of rerolls you can use to make Piloting skill checks in a Fighter.",
+	"Pool": "Pilot x2"
 }, {
 	"Name": "Fighter Mechanic",
 	"Description": "You get two free upgrade actions per campaign turn to spend only on fighters. You also get a free reroll when repairing or upgrading a fighter."
 }, {
 	"Name": "Fire Starter (Psionic) (Action) L.O.S.",
-	"Description": "Psionics vs. 8(+3 per additional target)You can start fires with your mind. Each target suffers 1 die of fire damage. An even result sets them on fire (see page xxx).Combat + Psionics"
+	"Description": "Psionics vs. 8(+3 per additional target)You can start fires with your mind. Each target suffers 1 die of fire damage. An even result sets them on fire (see page xxx).",
+	"Pool": "Combat + Psionics"
 }, {
 	"Name": "First Mate",
 	"Description": "You get +3 on all attempts to assist."
@@ -138,7 +187,8 @@
 	"Description": "You begin each encounter (mission, navigation hazard, etc.) retroactively on overwatch to take any action you like. You can go generically on overwatch as your action and then decide which action when you take it. Note that other overwatch restrictions still apply."
 }, {
 	"Name": "Forethinker (Psionic)",
-	"Description": "You have a feeling about how things are going to turn out. You can roll your skill check before declaring an action.Spend from this pool and roll two dice at the start of your turn. These dice will apply to your action this turn. If you declare the action to be within your profession, you may use your professional reroll before choosing the action. If the action you choose has variable difficulty (pumping engines or helm maneuvers) you may finish the skill check with reroll pools and luck before declaring the action. When it is all said and done, you may choose an action instead that doesn't involve a dieroll (such as moving, drawing a weapon, or using “calm”). You may use this ability a maximum of once per phase.Rank + Psionics"
+	"Description": "You have a feeling about how things are going to turn out. You can roll your skill check before declaring an action.Spend from this pool and roll two dice at the start of your turn. These dice will apply to your action this turn. If you declare the action to be within your profession, you may use your professional reroll before choosing the action. If the action you choose has variable difficulty (pumping engines or helm maneuvers) you may finish the skill check with reroll pools and luck before declaring the action. When it is all said and done, you may choose an action instead that doesn't involve a dieroll (such as moving, drawing a weapon, or using “calm”). You may use this ability a maximum of once per phase.",
+	"Pool": "Rank + Psionics"
 }, {
 	"Name": "Fortunate",
 	"Description": "You may spend 1 Luck to nudge a luckable die upwards by one instead of rerolling. You cannot nudge a “6” upwards. This ability may be used only once per check."
@@ -147,7 +197,8 @@
 	"Description": "You can just about get blood from a turnip. As long as your ship has at least one functioning Engine Module, you can take actions that would otherwise require power even if there is no power in the appropriate system. Doing so depletes one power each from all systems that have power and causes one point of hull damage.  Note that this means you can take Helm actions or launch missiles with no power at all for free (except for a little hull damage).  A Cannon fired with no power will have no effect but you could use this virtual power to operate the Teleporter to teleport an object or a bomb."
 }, {
 	"Name": "Ghost in the Machine (Psionic)",
-	"Description": "Free ActionSpend from this pool to operate a Battlestation from anywhere aboard a ship at no remote penalty.Engineering + Psionics"
+	"Description": "Free ActionSpend from this pool to operate a Battlestation from anywhere aboard a ship at no remote penalty.",
+	"Pool": "Engineering + Psionics"
 }, {
 	"Name": "Grease Monkey",
 	"Description": "You may reroll a die on any skill check to repair, reconfigure or upgrade anything. Youtreat the two battlestations within the Science Bay, Sick Bay or Engine modules as though they were adjacent."
@@ -162,7 +213,14 @@
 	"Description": "You can hack or de-EMP as a free action once per phase. You get +3 and a reroll on attempts to hack or de-EMP. All cyberware on your person functions as if it were upgraded."
 }, {
 	"Name": "Hard Headed",
-	"Description": "You gain +2 Hit Points. You may not have Psionics.  Any attempt to use Psionics against you is at a difficulty of +3 and the user suffers the effect also as if they had been the target. In addition, you get a pool you may use for rerolls in any passive skill check you attempt.Athletics + Rank"
+	"Description": "You gain +2 Hit Points. You may not have Psionics.  Any attempt to use Psionics against you is at a difficulty of +3 and the user suffers the effect also as if they had been the target. In addition, you get a pool you may use for rerolls in any passive skill check you attempt.",
+	"Pool": "Athletics + Rank"
+}, {
+	"Name": "A vomeg is juggling 4 grenades.",
+	"Description": ""
+}, {
+	"Name": "“And now for my next trick...",
+	"Description": "I blow you up!”HardenedSpend from this pool to reroll a die that deals damage to you.6HealerWhenever you heal anybody for at least one die, heal them for an additional die."
 }, {
 	"Name": "Helpful",
 	"Description": "You may let others spend your luck as if it were their own. You get a reroll on all attempts to assist."
@@ -171,7 +229,8 @@
 	"Description": "Any Piloting skill check you make to pilot a fighter or starship is successful on a roll of doubles even if it would otherwise fail. In a starship this ability causes OOC as normal. If used in a fighter, it damages the fighter causing a survival check but no collateral damage."
 }, {
 	"Name": "Hull Stress Empath (Psionic)",
-	"Description": "Free ActionYou may spend from this pool to reroll any number of hull damage dice your ship is taking. You will suffer one point of damage per die you choose to reroll. This damage cannot be reduced by special abilities, armor, drugs etc. but can heal as normal. Modules and their occupants are affected as if you hadn't used this ability. You may use this ability as often as you like.Engineering + Psionics"
+	"Description": "Free ActionYou may spend from this pool to reroll any number of hull damage dice your ship is taking. You will suffer one point of damage per die you choose to reroll. This damage cannot be reduced by special abilities, armor, drugs etc. but can heal as normal. Modules and their occupants are affected as if you hadn't used this ability. You may use this ability as often as you like.",
+	"Pool": "Engineering + Psionics"
 }, {
 	"Name": "Hunch Follower",
 	"Description": "You get +2 luck and may add the number of times you've successfully asked questions this campaign turn with the Science Bay to each attempt to use the Science Bay for any reason. Do not count each question in a multi-question separately."
@@ -180,13 +239,18 @@
 	"Description": "You are an expert in the martial arts. Your hands (or tentacles or whatever) are lethal weapons. You get a reroll on all Unarmed Attacks, Grappling Checks and damage you deal with Unarmed Attacks.  Your unarmed Attack damage is not limited by your Athletics. You may attack with 2 unarmed attacks at -3 to your skill check on each attack instead of the standard -6 for attacking with 2 weapons."
 }, {
 	"Name": "Hyper-Physicist",
-	"Description": "You may spend from this pool to reroll when using the Hyperdrive. You may also spend from this pool to reroll your facing on warp-in and on Jump Actions (HMFYP).Science x2"
+	"Description": "You may spend from this pool to reroll when using the Hyperdrive. You may also spend from this pool to reroll your facing on warp-in and on Jump Actions (HMFYP).",
+	"Pool": "Science x2"
 }, {
 	"Name": "Intuitive (Psionic)",
-	"Description": "You add your Psionics skill to your Science skill when making a skill check to ask questions or get Scans.You also get a pool you may spend from as a free action at most once per phase to ask a yes or no question about anything in the system or find out the next action of a Enemy controlled character. The Enemy must declare an action for that character. If that character chooses to take any other action, it will be at a -3 penalty and you gain a point of Luck.Science + Psionics"
+	"Description": "You add your Psionics skill to your Science skill when making a skill check to ask questions or get Scans.You also get a pool you may spend from as a free action at most once per phase to ask a yes or no question about anything in the system or find out the next action of a Enemy controlled character. The Enemy must declare an action for that character. If that character chooses to take any other action, it will be at a -3 penalty and you gain a point of Luck.",
+	"Pool": "Science + Psionics"
 }, {
 	"Name": "Jack of All Trades",
-	"Description": "You know a little something about just about everything. You get a pool of 2 rerolls to use in each skill aside from your profession.2 in each skill (except your profession)JetPack JockeyAdd +3 on your JetPack Piloting skill checks. You also get a free reroll in JetPack skill checks (this is in addition to professional reroll if you are a pilot)."
+	"Description": "You know a little something about just about everything. You get a pool of 2 rerolls to use in each skill aside from your profession.2 in each skill (except your profession)"
+}, {
+	"Name": "JetPack Jockey",
+	"Description": "Add +3 on your JetPack Piloting skill checks. You also get a free reroll in JetPack skill checks (this is in addition to professional reroll if you are a pilot)."
 }, {
 	"Name": "Jury Rigger",
 	"Description": "Once per phase, you may take a free action to attempt to repair a module."
@@ -201,13 +265,16 @@
 	"Description": "Add +3 to your Luck.  You may take this ability any number of times."
 }, {
 	"Name": "Mechanical Empath (Psionic) Free Action",
-	"Description": "Psionics vs. 8 (or 11 if remote)Remove a damage marker from any module on your ship as a free action. Use this at most once per phase during your action.Engineering + Psionics"
+	"Description": "Psionics vs. 8 (or 11 if remote)Remove a damage marker from any module on your ship as a free action. Use this at most once per phase during your action.",
+	"Pool": "Engineering + Psionics"
 }, {
 	"Name": "Mentally Shielded (Psionic)",
-	"Description": "When you are hit by an energized personal weapon, you may spend from this pool to force the attacker to roll an amount of dice equal to your Psionics skill with the damage dice and take away a number of the highest dice equal to your Psionics skill. (This works just like shields retarding ships' weapon damage).Athletics + Psionics"
+	"Description": "When you are hit by an energized personal weapon, you may spend from this pool to force the attacker to roll an amount of dice equal to your Psionics skill with the damage dice and take away a number of the highest dice equal to your Psionics skill. (This works just like shields retarding ships' weapon damage).",
+	"Pool": "Athletics + Psionics"
 }, {
 	"Name": "Mind Mender (Psionic) (Action) L.O.S.",
-	"Description": "Free Action. Psionics vs. distance in squaresYou may heal any target other than yourself for the amount by which your roll exceeds the difficulty. You suffer the amount you healed them as damaged reduced by your Psionics skill but not subject to other reduction. This damage can be healed as normal.Athletics + Psionics"
+	"Description": "Free ActionPsionics vs. distance in squaresYou may heal any target other than yourself for the amount by which your roll exceeds the difficulty. You suffer the amount you healed them as damaged reduced by your Psionics skill but not subject to other reduction. This damage can be healed as normal.",
+	"Pool": "Athletics + Psionics"
 }, {
 	"Name": "Miracle Worker",
 	"Description": "Once per campaign turn, you may place the dice instead of rolling them for any skill or survival check (passive or active). This decision must be made before you throw the dice. You will likely select “6,6” but since doubles sometimes has negative consequences, you might select “6,5”. You also get one additional point of luck."
@@ -216,7 +283,8 @@
 	"Description": "Add +2 to your Move attribute. You may ignore OOC for movement. You also get a free reroll on any attempt to move extra squares. You may take this ability any number of times."
 }, {
 	"Name": "Mr. Fixit",
-	"Description": "You may spend from this pool to reroll any attempt to repair or upgrade anything. You may also spend from this pool at most once per phase to attempt a repair as a free action.Engineering + Science"
+	"Description": "You may spend from this pool to reroll any attempt to repair or upgrade anything. You may also spend from this pool at most once per phase to attempt a repair as a free action.",
+	"Pool": "Engineering + Science"
 }, {
 	"Name": "Multi-Shot Expert",
 	"Description": "You may fire a Cannon configured as a multibarrel twice as a single action. Each shot expends one Guns power. You may reconfigure cannons as an automatic action."
@@ -228,13 +296,18 @@
 	"Description": "Either before or after taking an action or moving, you may spend from this pool to take a bonus action at a penalty of -3 to your skill check (or -3 to your move if your nimble action is to move). This ability may be used a maximum of once per phase.AthleticsNobleYou get an allowance from your estates. At the end of each campaign turn (right after requisitions) roll a number of dice equal to your rank and collect a number of credits equal to 100 times the total. This  roll is luckable."
 }, {
 	"Name": "Numb Runner",
-	"Description": "You've learned how to cope with being under the effects of controlled substances. You may spend from this pool to ignore the negative effects that would be imposed by drugs or toxins for one phase.  This includes needler toxins and drugs. You may choose which effect(s) you wish to ignore. You may also spend from this pool to administer a drug as a free action at most once per phase.Athletics x 2ObsessiveWhenever you spend a second or subsequent luck on something, you create a pool of 3 rerolls you may use on that same thing instead of 1 single reroll."
+	"Description": "You've learned how to cope with being under the effects of controlled substances. You may spend from this pool to ignore the negative effects that would be imposed by drugs or toxins for one phase.  This includes needler toxins and drugs. You may choose which effect(s) you wish to ignore. You may also spend from this pool to administer a drug as a free action at most once per phase.Athletics x 2"
+}, {
+	"Name": "Obsessive",
+	"Description": "Whenever you spend a second or subsequent luck on something, you create a pool of 3 rerolls you may use on that same thing instead of 1 single reroll."
 }, {
 	"Name": "Omniscient (Psionic) Free Action",
-	"Description": "Psionics vs. 8Once per phase as a free action, you may spend from this pool to ask a question (it doesn't have to be yes or no) about anything in the system. The Enemy must answer honestly but not necessarily clearly.You may also spend from this pool to reroll checks to hack or gather data.Science + Psionics"
+	"Description": "Psionics vs. 8Once per phase as a free action, you may spend from this pool to ask a question (it doesn't have to be yes or no) about anything in the system. The Enemy must answer honestly but not necessarily clearly.You may also spend from this pool to reroll checks to hack or gather data.",
+	"Pool": "Science + Psionics"
 }, {
 	"Name": "Overloader",
-	"Description": "You are able to tap into the ship's power conduits to increase your cannon power. When firing a ship's Cannon in standard or long range configuration, you may add the power level from either Shields or Helm to the Guns power when determining how many dice to throw for damage. When you do so, it effectively detonates a satchel charge in your square (see page xxx).  This ability can't be used remotely.This ability can be used in a fighter to generate 3 dice of damage for the shot, causes a damage marker to the fighter, a survival check and 2 dice of damage to the occupants.Engineering x2"
+	"Description": "You are able to tap into the ship's power conduits to increase your cannon power. When firing a ship's Cannon in standard or long range configuration, you may add the power level from either Shields or Helm to the Guns power when determining how many dice to throw for damage. When you do so, it effectively detonates a satchel charge in your square (see page xxx).  This ability can't be used remotely.This ability can be used in a fighter to generate 3 dice of damage for the shot, causes a damage marker to the fighter, a survival check and 2 dice of damage to the occupants.",
+	"Pool": "Engineering x2"
 }, {
 	"Name": "Pack Mule",
 	"Description": "You get +3 and a reroll on any attempt to quickdraw. Your carry capacity is also doubled after figuring all other effects (cyberware, special abilities, species abilities, etc.) Reduce the penalty to act after quickdrawing by one."
@@ -249,8 +322,8 @@
 	"Description": "You have amazing power over fire. You get to reroll damage you deal with direct fire effects including indirect damage but not damage dealt later. You may also reroll one die any skill check you make to put out a fire or fire damage you would sustain."
 }, {
 	"Name": "Polarizer (Psionic) (Action) L.O.S.",
-	"Description": "Psionics vs. 8(You may add +3 per additional target) Using the power of your mind, you can cause or remove the effect of EMP on a target piece of equipment in line of sight. Add +3 difficulty for each additional target.",
-	"Description": "Science + Psionics"
+	"Description": "Psionics vs. 8(You may add +3 per additional target)Using the power of your mind, you can cause or remove the effect of EMP on a target piece of equipment in line of sight. Add +3 difficulty for each additional target.",
+	"Pool": "Science + Psionics"
 }, {
 	"Name": "Power Slider",
 	"Description": "You may combine any Helm maneuvers (except “Steady the ship”) by adding +3 to the difficulty of the hardest maneuver for each additional maneuver you want to add."
@@ -265,10 +338,13 @@
 	"Description": "You can make stuff appear in your hand out of thin air. Reduce the penalty to act after any quick draw action by one. Add your Psionics skill to Athletics for all quickdraw actions. You also have a weightless extradimensional pocket to hold objects that only you can retrieve equal to your Psionics x 10.Retrieval of an item is an automatic action unless you want to quickdraw it.Total Mass of held objects  = Psionics x 10"
 }, {
 	"Name": "Psychic Blaster (Psionic) L.O.S.",
-	"Description": "Psionics vs. Target #Deals 1 die of damage +1 point per success (max 6). Treat this additional damage as an additional die for purposes of breaking equipment, modules, bots, etc. Ignores damage reduction.Combat + Psionics"
+	"Description": "Psionics vs. Target #Deals 1 die of damage +1 point per success (max 6). Treat this additional damage as an additional die for purposes of breaking equipment, modules, bots, etc. Ignores damage reduction.",
+	"Pool": "Combat + Psionics"
 }, {
 	"Name": "Psychic Shifter (Psionic)",
-	"Description": "Psionics vs. 8Move ActionMove to any square in the  module you are in as your move action. Each point of success allows you to move one module further.Piloting + PsionicsPsychic Stunner (Psionic)Free ActionAfter any direct personal attack you successfully make, you may add a Stun effect (see page xxx).Athletics + Psionics"
+	"Description": "Psionics vs. 8Move ActionMove to any square in the  module you are in as your move action. Each point of success allows you to move one module further.",
+	"Pool": "Piloting + PsionicsPsychic Stunner (Psionic)Free ActionAfter any direct personal attack you successfully make, you may add a Stun effect (see page xxx).",
+	"Pool": "Athletics + Psionics"
 }, {
 	"Name": "Puppeteer (Psionic) (Action) (L.O.S.)",
 	"Description": "Psionics vs. 11+ Target's RankChoose the target's next action. It cannot be an action to directly harm themselves but their ship and their crew are fair game.Diplomacy +Psionics"
@@ -292,7 +368,8 @@
 	"Description": "You may dodge or ram once per phase during ship movement or missile resolution as a free action."
 }, {
 	"Name": "Research Specialist",
-	"Description": "Your data retrieval skills are unparalleled (and unserialed!) You always count only half the used markers on the Science Bay for penalties (round up).  Furthermore, you may spend from this pool to reroll any use of the Science Bay.Science x2ResourcefulYou may spend from this pool to use Science or Engineering (whichever is higher) to substitute for any other skill check. You will get a professional reroll on the skill check.Engineering or Science (whichever is lower)"
+	"Description": "Your data retrieval skills are unparalleled (and unserialed!) You always count only half the used markers on the Science Bay for penalties (round up).  Furthermore, you may spend from this pool to reroll any use of the Science Bay.",
+	"Pool": "Science x2ResourcefulYou may spend from this pool to use Science or Engineering (whichever is higher) to substitute for any other skill check. You will get a professional reroll on the skill check.Engineering or Science (whichever is lower)"
 }, {
 	"Name": "Rolls With It",
 	"Description": "You know how to take the rhythms of the ship into account. Spend from this pool to count OOC as a bonus instead of a penalty to your action or move.Piloting"
@@ -301,19 +378,26 @@
 	"Description": "Once per Phase, as a free action, you may attempt to break something (other than personal equipment) with an Engineering skill check of 11 or by attacking with a personal weapon. You may reroll all dice you would deal to equipment, cargo bay items, and modules."
 }, {
 	"Name": "Seer (Psionic) (Free Action)",
-	"Description": "You may spend from this pool to have line of sight to anywhere aboard the ship you are on for purposes of targeting with a Psionic ability.You may also spend from this pool at most once per phase to get scans as a free action using your Psionics skill.Psionics vs. ½ distance.(+3 for each additional scan)Science + Psionics"
+	"Description": "You may spend from this pool to have line of sight to anywhere aboard the ship you are on for purposes of targeting with a Psionic ability.You may also spend from this pool at most once per phase to get scans as a free action using your Psionics skill.Psionics vs. ½ distance.(+3 for each additional scan)",
+	"Pool": "Science + Psionics"
 }, {
 	"Name": "Sharpshooter",
-	"Description": "You may spend from this pool to reroll hit allocation when attacking with ship's weapons or attack rolls with direct personal ranged attacks.Combat x2Shield HarmonizerYour direct fire shots with a ship's weapon count the target's shields as half (round down). Also while you are at a Battlestation, your ship's shields are considered one higher for purposes of enemy attacks and one lower for your ship's attempts to Teleport out (if your ship's Shields are powered at all)."
+	"Description": "You may spend from this pool to reroll hit allocation when attacking with ship's weapons or attack rolls with direct personal ranged attacks.",
+	"Pool": "Combat x2Shield HarmonizerYour direct fire shots with a ship's weapon count the target's shields as half (round down). Also while you are at a Battlestation, your ship's shields are considered one higher for purposes of enemy attacks and one lower for your ship's attempts to Teleport out (if your ship's Shields are powered at all)."
 }, {
 	"Name": "Shock Trooper",
 	"Description": "As a free action at the end of your final movement in a phase, you may go on overwatch to attack with a personal weapon. Note that you may not go on overwatch in the middle of your action.Combat"
 }, {
 	"Name": "Slipster (Psionic)",
-	"Description": "Free ActionDuring your move, you may spend from this pool to turn 1 of your points of movement into a “Slip”. This slip allows you to move a number of squares equal to your Psionics skill ignoring any and all limitations.(slagged squares, walls, etc.) During a slip, you are not subject to overwatch or free attacks. You may leave the ship if you are close enough to an external wall. You may also use this ability to get into or out of a fighter.Athletics + Psionics"
+	"Description": "Free ActionDuring your move, you may spend from this pool to turn 1 of your points of movement into a “Slip”. This slip allows you to move a number of squares equal to your Psionics skill ignoring any and all limitations.(slagged squares, walls, etc.) During a slip, you are not subject to overwatch or free attacks. You may leave the ship if you are close enough to an external wall. You may also use this ability to get into or out of a fighter.",
+	"Pool": "Athletics + Psionics"
 }, {
 	"Name": "Smooth",
-	"Description": "You may take an action that wouldn't normally require a skill check or movement as a free action a maximum of once per phase. This action cannot be “Brace”, “Overwatch”, or “Prepare” or include any movement such as pop.Athletics + RankSmugglerYou've got the goods. It's just that you don't want anyone to know where you've stashed them. Your practice with tight spaces means you ignore the penalty to move or act in a slagged square.You get a free reroll when operating, upgrading or repairing the Cargo Bay or any Cargo Bay item.In the “How Much for Your Planet?” campaign, you will always have an additional cargo available at each port but it will be contraband."
+	"Description": "You may take an action that wouldn't normally require a skill check or movement as a free action a maximum of once per phase. This action cannot be “Brace”, “Overwatch”, or “Prepare” or include any movement such as pop.",
+	"Pool": "Athletics + Rank"
+}, {
+	"Name": "Smuggler",
+	"Description": "You've got the goods. It's just that you don't want anyone to know where you've stashed them. Your practice with tight spaces means you ignore the penalty to move or act in a slagged square.You get a free reroll when operating, upgrading or repairing the Cargo Bay or any Cargo Bay item.In the “How Much for Your Planet?” campaign, you will always have an additional cargo available at each port but it will be contraband."
 }, {
 	"Name": "Sniper",
 	"Description": "You are adept at ranged combat. Count range penalties as one step closer with personal weapons or 1 hex closer for ship's direct fire weapons. If your skill check in a ranged direct fire shot (personal or with a ship's gun) exceeded the target number by at least 3, you may reroll a damage die."
@@ -325,7 +409,11 @@
 	"Description": "You know your way around a starship. You may spend from this pool on any skill check.4"
 }, {
 	"Name": "Speed Demon",
-	"Description": "You may spend from this pool to reroll any attempt to accelerate, decelerate or stall a starship or move in a fighter.Piloting x2Steady HandedYour piloting maneuvers always generate half as much OOC (round up). You steady the ship as an automatic action."
+	"Description": "You may spend from this pool to reroll any attempt to accelerate, decelerate or stall a starship or move in a fighter.",
+	"Pool": "Piloting x2"
+}, {
+	"Name": "Steady Handed",
+	"Description": "Your piloting maneuvers always generate half as much OOC (round up). You steady the ship as an automatic action."
 }, {
 	"Name": "Stunner",
 	"Description": "After hitting with an with an unarmed or natural weapon attack, you may force your target to make an Athletics skill against a difficulty of 11. The amount they fail by indicates a number of Stun markers they receive. See Stun page xxx.  This effect is generated even if all of the damage is mitigated."
@@ -337,16 +425,23 @@
 	"Description": "You may take your actions during your move (interrupting your move action)."
 }, {
 	"Name": "Sympathetic (Psionic)",
-	"Description": "Free ActionYou may force your attacker to also suffer the highest die of damage in a direct personal attack. This damage is not subject to armor or species ability. (Use this power a maximum of once per attack after the damage die is thrown).Athletics + Psionics"
+	"Description": "Free ActionYou may force your attacker to also suffer the highest die of damage in a direct personal attack. This damage is not subject to armor or species ability. (Use this power a maximum of once per attack after the damage die is thrown).",
+	"Pool": "Athletics + Psionics"
 }, {
 	"Name": "Tailgunner",
-	"Description": "Spend from this pool to reroll combat checks when firing a fighter's gunCombat + Piloting"
+	"Description": "Spend from this pool to reroll combat checks when firing a fighter's gun",
+	"Pool": "Combat + Piloting"
 }, {
 	"Name": "Telekinetic (Psionic) Action L.O.S.",
-	"Description": "Psionics vs. 8(+3 per additional die or target or point of penalty to resist being spaced or having an item taken) Move a being within Line of Sight when you start to move them up to 1d6 squares with your mind. You may add +3 to move the target an additional die of squares or add an additional target. All dice apply to each target but roll dice separately for each target. Targets getting pushed out an airlock are entitled to an Athletics check of 8 to resist becoming Spacewalkers. A held object may be grabbed instead. The target is entitled to an Athletics check of 8 to keep the item (or stop you from psychically pulling the pin on his grenade). If you move an item into your square you may grab it with a free hand as a free action.Athletics + Psionics"
+	"Description": "Psionics vs. 8(+3 per additional die or target or point of penalty to resist being spaced or having an item taken)Move a being within Line of Sight when you start to move them up to 1d6 squares with your mind. You may add +3 to move the target an additional die of squares or add an additional target. All dice apply to each target but roll dice separately for each target. Targets getting pushed out an airlock are entitled to an Athletics check of 8 to resist becoming Spacewalkers.A held object may be grabbed instead. The target is entitled to an Athletics check of 8 to keep the item (or stop you from psychically pulling the pin on his grenade). If you move an item into your square you may grab it with a free hand as a free action.",
+	"Pool": "Athletics + Psionics"
 }, {
 	"Name": "Teleporter Specialist",
-	"Description": "You know that module like the back of your tentacle. You always count only half the used markers on the Teleporter (round down) for penalties to use. You also have a pool to reroll skill checks made with the Teleporter as well as hit allocation rolls when you are Teleporting or being Teleported.Science x2TinkererYou are adept at tricking out gear. You may make an additional upgrade attempt during the upgrade portion of the Campaign Turn (see upgrades page xxx) and you get a free reroll on all upgrade or repair attempts."
+	"Description": "You know that module like the back of your tentacle. You always count only half the used markers on the Teleporter (round down) for penalties to use. You also have a pool to reroll skill checks made with the Teleporter as well as hit allocation rolls when you are Teleporting or being Teleported.",
+	"Pool": "Science x2"
+}, {
+	"Name": "Tinkerer",
+	"Description": "You are adept at tricking out gear. You may make an additional upgrade attempt during the upgrade portion of the Campaign Turn (see upgrades page xxx) and you get a free reroll on all upgrade or repair attempts."
 }, {
 	"Name": "Tough",
 	"Description": "Your Athletics counts as one higher for all purposes except adding skill levels and you may reroll any Athletics check you attempt as though you were a professional Athlete."
@@ -367,10 +462,20 @@
 	"Description": "Your knowledge of the ship's innermost workings allows you to make things happen that leave others in awe. You may spend from this pool as an automatic action to do any of the following:Dump Trash: Each microship (missile, fighter, mine, and drone) in your hex must roll a survival check of 7 plus their damage markers or be destroyed.Focus Sensors: All of your ship's targeting rolls (i.e. Cannon attacks, targeting locks, teleporting, etc.) gain a +1 bonus for the remainder of the Round.Vent Plasma: Stabilize the ship (clear all OOC).Engineering"
 }, {
 	"Name": "Turn Specialist",
-	"Description": "You may spend from this pool to reroll your Piloting skill check when attempting any maneuver to turn, dodge, ram, or sideslip.Piloting x2UnconventionalYou think outside the box. Some might say too far outside the box. You may spend from this pool to opt on any skill check to try something unexpected (like firing blind or using the wrong end of a toolkit). When you do so, roll a separate die along with your skill check. An odd die result is added to your skill check total. An even numbered result is subtracted. You may reroll the die by spending from this pool (or luck). This die is not a skill check die so not subject to professional reroll or reroll from special abilities.Science"
+	"Description": "You may spend from this pool to reroll your Piloting skill check when attempting any maneuver to turn, dodge, ram, or sideslip.",
+	"Pool": "Piloting x2"
+}, {
+	"Name": "Unconventional",
+	"Description": "You think outside the box. Some might say too far outside the box. You may spend from this pool to opt on any skill check to try something unexpected (like firing blind or using the wrong end of a toolkit). When you do so, roll a separate die along with your skill check. An odd die result is added to your skill check total. An even numbered result is subtracted. You may reroll the die by spending from this pool (or luck). This die is not a skill check die so not subject to professional reroll or reroll from special abilities.Science"
 }, {
 	"Name": "Unflappable",
-	"Description": "Your vast experience has developed your cool nerve and an uncanny ability to ignore distraction. You may choose to ignore a total of up to -3 in penalties each time you use this ability. You cannot apply this ability more than once to a given action.RankUniminded (Psionic) L.O.S.You may use an ally's skill instead of your own as long as that ally is within Line Of Sight.4UnlimitedOnce per campaign turn, you may reset up to two of your special abilities to their starting values as if it were the start of the campaign turn. This does not apply to single use abilities such as adaptable."
+	"Description": "Your vast experience has developed your cool nerve and an uncanny ability to ignore distraction. You may choose to ignore a total of up to -3 in penalties each time you use this ability. You cannot apply this ability more than once to a given action.Rank"
+}, {
+	"Name": "Uniminded (Psionic) L.O.S.",
+	"Description": "You may use an ally's skill instead of your own as long as that ally is within Line Of Sight.4"
+}, {
+	"Name": "Unlimited",
+	"Description": "Once per campaign turn, you may reset up to two of your special abilities to their starting values as if it were the start of the campaign turn. This does not apply to single use abilities such as adaptable."
 }, {
 	"Name": "Unpredictable",
 	"Description": "At the start of your turn in a phase, roll a die (luckable) to see which random skill will be easier for you this phase. (1=Athletics, 2= Combat, 3= Engineering, 4= Piloting, 5= Science, 6= your choice).  Actions you take this turn in the chosen skill will be at +1 with a free reroll."
@@ -394,7 +499,8 @@
 	"Description": "You may join in on any dogfight in your hex and if your roll is the highest, you may damage any fighter in the dogfight without using up your guns for the phase. You also may add +1 to skill checks made by friendly microships in your hex.You get a free dogfight against any fighter or drone that enters your hex. If you win the dogfight, you get a free shot on them. This shot does not use up your gun for the phase and can be taken even if your guns have been used."
 }, {
 	"Name": "Wrestler",
-	"Description": "In all of your successful grapples, you may choose to apply up to two different effects. You also have a pool of rerolls to use in grapples.Combat x2"
+	"Description": "In all of your successful grapples, you may choose to apply up to two different effects. You also have a pool of rerolls to use in grapples.",
+	"Pool": "Combat x2"
 }, {
 	"Name": "Xenobiologist",
 	"Description": "Your direct attacks ignore species damage reduction abilities."

@@ -247,9 +247,25 @@
 				style="width: 100%">
 			</select>
 		</div>
-		<div class="col-md-6" style="text-align: left; ">
+		<div class="col-md-2">
+			<form data-ng-submit="addAbility()" >
+				<input type="submit" value="Add Abiliy" class="btn btn-primary" />
+			</form>
+		</div>
+		<div class="col-md-4">
+			<select ng-model="selectedAbility" ng-options="ability.Name for ability in specialAbilities" ng-change="itemChange()"
+				style="width: 100%">
+			</select>
+		</div>
+	</div>
+	<div class="row no-print" style="margin: 10px;">
+		<div class="col-md-6" style="text-align: left; height: 75px; ">
 			<span style="width: 100%">{{itemInfo}}</span><br>
 			<span>{{itemEffect}}</span>
+		</div>
+		<div class="col-md-6" style="text-align: left; height: 75px; ">
+			<span style="width: 100%">{{selectedAbility.Name}}</span><br>
+			<span>{{selectedAbility.Description}}</span>
 		</div>
 	</div>
 	<div class="row no-print" style="margin: 10px; ">

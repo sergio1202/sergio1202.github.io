@@ -35,7 +35,7 @@
 	$scope.itemEffect = '';
 	$scope.itemChange = function() {
 		var item =  $scope.selectedItem;
-		if(!item.Effect) {
+		if(!item || !item.Effect) {
 			$scope.itemInfo = "";
 			return false;
 		}
@@ -55,6 +55,10 @@
 
     $scope.equipment = $http.get('http://sergio1202.github.io/js/equipment.json').success(function(data) {
 		$scope.equipment = data;
+    });
+
+    $scope.specialAbilities = $http.get('http://sergio1202.github.io/js/specialAbilities.json').success(function(data) {
+		$scope.specialAbilities = data;
     });
 	
 	$scope.items = [];
