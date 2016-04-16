@@ -59,9 +59,6 @@
 	"Name": "Contortionist",
 	"Description": "You may move and act in slagged squares as though they were not slagged. Your target number is one higher except for grappling. You still may not jet through slagged squares. You also get a reroll on all grappling checks (see page xxx)."
 }, {
-	"Name": "A human squeezing between two barrels",
-	"Description": "Cortex Overloader (Psionic) L.O.S.Psionics vs. 8(+3 per +1 difficulty)(+3 per additional target)Force a target in Line of Sight to make an Athletics check of 9 or their head implodes (bringing them to -6 hit points). You may increase your difficulty by +3 for each +1 you wish to increase their difficulty. You may also increase by +3 for each additional target you wish to target.Combat + PsionicsCourtierYou have no difficulties moving or acting in slagged squares. (Jet moves are not allowed in slagged squares). You may allow others to spend your luck.  Your close contact with the queen has allowed you to become immune to the pheromone phever effect in “By Her Majesty's Sacred Egg Sac”."
-}, {
 	"Name": "Crafty",
 	"Description": "You are a tricky Scientist. Spend from this pool to do any one of the following as an action at a battlestation. The benefits last until the end of the round.Checkup – add +1 to the Athletics checks of and skill checks on any attempt to heal the crew you flew in with.Focus Sensors – add +1 to any attempt your ship makes to target anything.Tune Shields – add +1 to your effective shields level for inbound attacks but -1 for Teleporting out.ScienceCross-ClassYou may choose a new profession. You retain a pool of 4 rerolls to use in your previous profession. You may even select this as your starting ability. If you later retrain this ability out, you lose the 4 rerolls but keep your new profession.4"
 }, {
@@ -116,9 +113,6 @@
 	"Name": "Fast Talker",
 	"Description": "You may make a Diplomacy action at a -3 penalty as a free action a maximum of once per phase when you do not take another Diplomacy Action in that phase including free diplomacy actions."
 }, {
-	"Name": "A canosian Engineer is in an engine, turning three valves, pulling 2 levers and typing on a keyboard. Power levels on the monitor are climbing and steam is blasting out all over through safety valves. Heat waves are rolling off the equipment.",
-	"Description": ""
-}, {
 	"Name": "Fated",
 	"Description": "You may choose the result of the first and last points of luck you use in a campaign turn instead of rerolling with it."
 }, {
@@ -170,12 +164,6 @@
 	"Name": "Hard Headed",
 	"Description": "You gain +2 Hit Points. You may not have Psionics.  Any attempt to use Psionics against you is at a difficulty of +3 and the user suffers the effect also as if they had been the target. In addition, you get a pool you may use for rerolls in any passive skill check you attempt.Athletics + Rank"
 }, {
-	"Name": "A vomeg is juggling 4 grenades.",
-	"Description": ""
-}, {
-	"Name": "“And now for my next trick...",
-	"Description": "I blow you up!”HardenedSpend from this pool to reroll a die that deals damage to you.6HealerWhenever you heal anybody for at least one die, heal them for an additional die."
-}, {
 	"Name": "Helpful",
 	"Description": "You may let others spend your luck as if it were their own. You get a reroll on all attempts to assist."
 }, {
@@ -196,9 +184,6 @@
 }, {
 	"Name": "Intuitive (Psionic)",
 	"Description": "You add your Psionics skill to your Science skill when making a skill check to ask questions or get Scans.You also get a pool you may spend from as a free action at most once per phase to ask a yes or no question about anything in the system or find out the next action of a Enemy controlled character. The Enemy must declare an action for that character. If that character chooses to take any other action, it will be at a -3 penalty and you gain a point of Luck.Science + Psionics"
-}, {
-	"Name": "A human with a jet pack is flying through the scene firing an ion bore with one hand and reviving a slumped xeloxian with a medkit in the other hand.",
-	"Description": ""
 }, {
 	"Name": "Jack of All Trades",
 	"Description": "You know a little something about just about everything. You get a pool of 2 rerolls to use in each skill aside from your profession.2 in each skill (except your profession)JetPack JockeyAdd +3 on your JetPack Piloting skill checks. You also get a free reroll in JetPack skill checks (this is in addition to professional reroll if you are a pilot)."
@@ -222,10 +207,7 @@
 	"Description": "When you are hit by an energized personal weapon, you may spend from this pool to force the attacker to roll an amount of dice equal to your Psionics skill with the damage dice and take away a number of the highest dice equal to your Psionics skill. (This works just like shields retarding ships' weapon damage).Athletics + Psionics"
 }, {
 	"Name": "Mind Mender (Psionic) (Action) L.O.S.",
-	"Description": ""
-}, {
-	"Name": "Free Action",
-	"Description": "Psionics vs. distance in squaresYou may heal any target other than yourself for the amount by which your roll exceeds the difficulty. You suffer the amount you healed them as damaged reduced by your Psionics skill but not subject to other reduction. This damage can be healed as normal.Athletics + Psionics"
+	"Description": "Free Action. Psionics vs. distance in squaresYou may heal any target other than yourself for the amount by which your roll exceeds the difficulty. You suffer the amount you healed them as damaged reduced by your Psionics skill but not subject to other reduction. This damage can be healed as normal.Athletics + Psionics"
 }, {
 	"Name": "Miracle Worker",
 	"Description": "Once per campaign turn, you may place the dice instead of rolling them for any skill or survival check (passive or active). This decision must be made before you throw the dice. You will likely select “6,6” but since doubles sometimes has negative consequences, you might select “6,5”. You also get one additional point of luck."
@@ -244,9 +226,6 @@
 }, {
 	"Name": "Nimble",
 	"Description": "Either before or after taking an action or moving, you may spend from this pool to take a bonus action at a penalty of -3 to your skill check (or -3 to your move if your nimble action is to move). This ability may be used a maximum of once per phase.AthleticsNobleYou get an allowance from your estates. At the end of each campaign turn (right after requisitions) roll a number of dice equal to your rank and collect a number of credits equal to 100 times the total. This  roll is luckable."
-}, {
-	"Name": "Micro illustration:",
-	"Description": "stacks of credit bars like gold bars."
 }, {
 	"Name": "Numb Runner",
 	"Description": "You've learned how to cope with being under the effects of controlled substances. You may spend from this pool to ignore the negative effects that would be imposed by drugs or toxins for one phase.  This includes needler toxins and drugs. You may choose which effect(s) you wish to ignore. You may also spend from this pool to administer a drug as a free action at most once per phase.Athletics x 2ObsessiveWhenever you spend a second or subsequent luck on something, you create a pool of 3 rerolls you may use on that same thing instead of 1 single reroll."
@@ -270,9 +249,7 @@
 	"Description": "You have amazing power over fire. You get to reroll damage you deal with direct fire effects including indirect damage but not damage dealt later. You may also reroll one die any skill check you make to put out a fire or fire damage you would sustain."
 }, {
 	"Name": "Polarizer (Psionic) (Action) L.O.S.",
-	"Description": "Psionics vs. 8(You may add +3 per additional target)"
-}, {
-	"Name": "Using the power of your mind, you can cause or remove the effect of EMP on a target piece of equipment in line of sight. Add +3 difficulty for each additional target.",
+	"Description": "Psionics vs. 8(You may add +3 per additional target) Using the power of your mind, you can cause or remove the effect of EMP on a target piece of equipment in line of sight. Add +3 difficulty for each additional target.",
 	"Description": "Science + Psionics"
 }, {
 	"Name": "Power Slider",
@@ -353,12 +330,6 @@
 	"Name": "Stunner",
 	"Description": "After hitting with an with an unarmed or natural weapon attack, you may force your target to make an Athletics skill against a difficulty of 11. The amount they fail by indicates a number of Stun markers they receive. See Stun page xxx.  This effect is generated even if all of the damage is mitigated."
 }, {
-	"Name": "Spacelegs illustration",
-	"Description": ""
-}, {
-	"Name": "The scene is cocked 60 degrees sideways. Various characters are off-balance. One character stands easy and is blasting them with a Voltrex.",
-	"Description": ""
-}, {
 	"Name": "Sure Handed",
 	"Description": "You may choose to ignore the “dangerous” effects of your dangerous weapons. Any time you would damage a module or a friendly, you may reroll the damage die. You get a free reroll on attempts to Quickdraw, or repair personal items.You also get +1 Luck."
 }, {
@@ -372,10 +343,7 @@
 	"Description": "Spend from this pool to reroll combat checks when firing a fighter's gunCombat + Piloting"
 }, {
 	"Name": "Telekinetic (Psionic) Action L.O.S.",
-	"Description": "Psionics vs. 8(+3 per additional die or target or point of penalty to resist being spaced or having an item taken)"
-}, {
-	"Name": "Move a being within Line of Sight when you start to move them up to 1d6 squares with your mind. You may add +3 to move the target an additional die of squares or add an additional target. All dice apply to each target but roll dice separately for each target. Targets getting pushed out an airlock are entitled to an Athletics check of 8 to resist becoming Spacewalkers.",
-	"Description": "A held object may be grabbed instead. The target is entitled to an Athletics check of 8 to keep the item (or stop you from psychically pulling the pin on his grenade). If you move an item into your square you may grab it with a free hand as a free action.Athletics + Psionics"
+	"Description": "Psionics vs. 8(+3 per additional die or target or point of penalty to resist being spaced or having an item taken) Move a being within Line of Sight when you start to move them up to 1d6 squares with your mind. You may add +3 to move the target an additional die of squares or add an additional target. All dice apply to each target but roll dice separately for each target. Targets getting pushed out an airlock are entitled to an Athletics check of 8 to resist becoming Spacewalkers. A held object may be grabbed instead. The target is entitled to an Athletics check of 8 to keep the item (or stop you from psychically pulling the pin on his grenade). If you move an item into your square you may grab it with a free hand as a free action.Athletics + Psionics"
 }, {
 	"Name": "Teleporter Specialist",
 	"Description": "You know that module like the back of your tentacle. You always count only half the used markers on the Teleporter (round down) for penalties to use. You also have a pool to reroll skill checks made with the Teleporter as well as hit allocation rolls when you are Teleporting or being Teleported.Science x2TinkererYou are adept at tricking out gear. You may make an additional upgrade attempt during the upgrade portion of the Campaign Turn (see upgrades page xxx) and you get a free reroll on all upgrade or repair attempts."
