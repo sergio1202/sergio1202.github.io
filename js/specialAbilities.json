@@ -84,7 +84,8 @@
 	"Description": "You have no difficulties moving or acting in slagged squares. (Jet moves are not allowed in slagged squares). You may allow others to spend your luck.  Your close contact with the queen has allowed you to become immune to the pheromone phever effect in “By Her Majesty's Sacred Egg Sac”."
 }, {
 	"Name": "Crafty",
-	"Description": "You are a tricky Scientist. Spend from this pool to do any one of the following as an action at a battlestation. The benefits last until the end of the round.Checkup – add +1 to the Athletics checks of and skill checks on any attempt to heal the crew you flew in with.Focus Sensors – add +1 to any attempt your ship makes to target anything.Tune Shields – add +1 to your effective shields level for inbound attacks but -1 for Teleporting out.Science"
+	"Description": "You are a tricky Scientist. Spend from this pool to do any one of the following as an action at a battlestation. The benefits last until the end of the round.Checkup – add +1 to the Athletics checks of and skill checks on any attempt to heal the crew you flew in with.Focus Sensors – add +1 to any attempt your ship makes to target anything.Tune Shields – add +1 to your effective shields level for inbound attacks but -1 for Teleporting out.",
+	"Pool": "Science"
 }, {
 	"Name": "Cross-Class",
 	"Description": "You may choose a new profession. You retain a pool of 4 rerolls to use in your previous profession. You may even select this as your starting ability. If you later retrain this ability out, you lose the 4 rerolls but keep your new profession.",
@@ -217,12 +218,12 @@
 	"Description": "You gain +2 Hit Points. You may not have Psionics.  Any attempt to use Psionics against you is at a difficulty of +3 and the user suffers the effect also as if they had been the target. In addition, you get a pool you may use for rerolls in any passive skill check you attempt.",
 	"Pool": "Athletics + Rank"
 }, {
-	"Name": "A vomeg is juggling 4 grenades.",
-	"Description": ""
+	"Name": "Hardened",
+	"Description": "Spend from this pool to reroll a die that deals damage to you.",
+	"Pool": "6"
 }, {
-	"Name": "“And now for my next trick...",
-	"Description": "I blow you up!”HardenedSpend from this pool to reroll a die that deals damage to you.",
-	"Pool": "6HealerWhenever you heal anybody for at least one die, heal them for an additional die."
+	"Name": "Healer",
+	"Description": "Whenever you heal anybody for at least one die, heal them for an additional die."
 }, {
 	"Name": "Helpful",
 	"Description": "You may let others spend your luck as if it were their own. You get a reroll on all attempts to assist."
@@ -295,7 +296,9 @@
 	"Description": "You have a knack for sizing up an interpersonal situation. At the start of each phase roll 2 dice. This will be the opening throw of a Diplomacy skill check if you take a Diplomacy action. If you don't take a Diplomacy action, ignore these dice. This ability can be used before deciding whether to negotiate for higher pay in the “How Much for Your Planet?” campaign."
 }, {
 	"Name": "Nimble",
-	"Description": "Either before or after taking an action or moving, you may spend from this pool to take a bonus action at a penalty of -3 to your skill check (or -3 to your move if your nimble action is to move). This ability may be used a maximum of once per phase.AthleticsNobleYou get an allowance from your estates. At the end of each campaign turn (right after requisitions) roll a number of dice equal to your rank and collect a number of credits equal to 100 times the total. This  roll is luckable."
+	"Description": "Either before or after taking an action or moving, you may spend from this pool to take a bonus action at a penalty of -3 to your skill check (or -3 to your move if your nimble action is to move). This ability may be used a maximum of once per phase.",
+	"Pool": "Athletics",
+	"Pool": "NobleYou get an allowance from your estates. At the end of each campaign turn (right after requisitions) roll a number of dice equal to your rank and collect a number of credits equal to 100 times the total. This  roll is luckable."
 }, {
 	"Name": "Numb Runner",
 	"Description": "You've learned how to cope with being under the effects of controlled substances. You may spend from this pool to ignore the negative effects that would be imposed by drugs or toxins for one phase.  This includes needler toxins and drugs. You may choose which effect(s) you wish to ignore. You may also spend from this pool to administer a drug as a free action at most once per phase.Athletics x 2"
@@ -334,7 +337,8 @@
 	"Description": "Powered Armor is like a second skin to you. Reduce the difficulties to power up your armor and the penalties you suffer for non-combat actions you take in powered armor by 1. You count your piloting skill as one higher for jet-moves in powered armor. You may move during the phase you power up the powered armor."
 }, {
 	"Name": "Preconceived",
-	"Description": "You have destiny by the tail. You may spend 2 luck to select the result of a die that you would luck instead of rolling the die.  You may not select the same number twice in a campaign turn.special"
+	"Description": "You have destiny by the tail. You may spend 2 luck to select the result of a die that you would luck instead of rolling the die.  You may not select the same number twice in a campaign turn.",
+	"Pool": "special"
 }, {
 	"Name": "Prestidigitator (Psionic)",
 	"Description": "You can make stuff appear in your hand out of thin air. Reduce the penalty to act after any quick draw action by one. Add your Psionics skill to Athletics for all quickdraw actions. You also have a weightless extradimensional pocket to hold objects that only you can retrieve equal to your Psionics x 10.Retrieval of an item is an automatic action unless you want to quickdraw it.Total Mass of held objects  = Psionics x 10"
@@ -371,10 +375,12 @@
 }, {
 	"Name": "Research Specialist",
 	"Description": "Your data retrieval skills are unparalleled (and unserialed!) You always count only half the used markers on the Science Bay for penalties (round up).  Furthermore, you may spend from this pool to reroll any use of the Science Bay.",
-	"Pool": "Science x2ResourcefulYou may spend from this pool to use Science or Engineering (whichever is higher) to substitute for any other skill check. You will get a professional reroll on the skill check.Engineering or Science (whichever is lower)"
+	"Pool": "Science x2",
+	"Pool": "ResourcefulYou may spend from this pool to use Science or Engineering (whichever is higher) to substitute for any other skill check. You will get a professional reroll on the skill check.Engineering or Science (whichever is lower)"
 }, {
 	"Name": "Rolls With It",
-	"Description": "You know how to take the rhythms of the ship into account. Spend from this pool to count OOC as a bonus instead of a penalty to your action or move.Piloting"
+	"Description": "You know how to take the rhythms of the ship into account. Spend from this pool to count OOC as a bonus instead of a penalty to your action or move.",
+	"Pool": "Piloting"
 }, {
 	"Name": "Saboteur",
 	"Description": "Once per Phase, as a free action, you may attempt to break something (other than personal equipment) with an Engineering skill check of 11 or by attacking with a personal weapon. You may reroll all dice you would deal to equipment, cargo bay items, and modules."
@@ -385,10 +391,14 @@
 }, {
 	"Name": "Sharpshooter",
 	"Description": "You may spend from this pool to reroll hit allocation when attacking with ship's weapons or attack rolls with direct personal ranged attacks.",
-	"Pool": "Combat x2Shield HarmonizerYour direct fire shots with a ship's weapon count the target's shields as half (round down). Also while you are at a Battlestation, your ship's shields are considered one higher for purposes of enemy attacks and one lower for your ship's attempts to Teleport out (if your ship's Shields are powered at all)."
+	"Pool": "Combat x2"
+}, {
+	"Name": "Shield Harmonizer",
+	"Description": "Your direct fire shots with a ship's weapon count the target's shields as half (round down). Also while you are at a Battlestation, your ship's shields are considered one higher for purposes of enemy attacks and one lower for your ship's attempts to Teleport out (if your ship's Shields are powered at all)."
 }, {
 	"Name": "Shock Trooper",
-	"Description": "As a free action at the end of your final movement in a phase, you may go on overwatch to attack with a personal weapon. Note that you may not go on overwatch in the middle of your action.Combat"
+	"Description": "As a free action at the end of your final movement in a phase, you may go on overwatch to attack with a personal weapon. Note that you may not go on overwatch in the middle of your action.",
+	"Pool": "Combat"
 }, {
 	"Name": "Slipster (Psionic)",
 	"Description": "Free ActionDuring your move, you may spend from this pool to turn 1 of your points of movement into a “Slip”. This slip allows you to move a number of squares equal to your Psionics skill ignoring any and all limitations.(slagged squares, walls, etc.) During a slip, you are not subject to overwatch or free attacks. You may leave the ship if you are close enough to an external wall. You may also use this ability to get into or out of a fighter.",
@@ -462,17 +472,20 @@
 	"Description": "Your personal attack targets do not get the benefit of peeking, popping, shields or cover. You may ignore OOC in your direct ranged attacks with personal weapons or when firing a ship's cannon.You can bank direct personal weapon attacks  around corners. Add +3 to the difficulty to hit a target around a corner and +1 to the difficulty for each additional square beyond the corner they are."
 }, {
 	"Name": "Tricky",
-	"Description": "Your knowledge of the ship's innermost workings allows you to make things happen that leave others in awe. You may spend from this pool as an automatic action to do any of the following:Dump Trash: Each microship (missile, fighter, mine, and drone) in your hex must roll a survival check of 7 plus their damage markers or be destroyed.Focus Sensors: All of your ship's targeting rolls (i.e. Cannon attacks, targeting locks, teleporting, etc.) gain a +1 bonus for the remainder of the Round.Vent Plasma: Stabilize the ship (clear all OOC).Engineering"
+	"Description": "Your knowledge of the ship's innermost workings allows you to make things happen that leave others in awe. You may spend from this pool as an automatic action to do any of the following:Dump Trash: Each microship (missile, fighter, mine, and drone) in your hex must roll a survival check of 7 plus their damage markers or be destroyed.Focus Sensors: All of your ship's targeting rolls (i.e. Cannon attacks, targeting locks, teleporting, etc.) gain a +1 bonus for the remainder of the Round.Vent Plasma: Stabilize the ship (clear all OOC).",
+	"Pool": "Engineering"
 }, {
 	"Name": "Turn Specialist",
 	"Description": "You may spend from this pool to reroll your Piloting skill check when attempting any maneuver to turn, dodge, ram, or sideslip.",
 	"Pool": "Piloting x2"
 }, {
 	"Name": "Unconventional",
-	"Description": "You think outside the box. Some might say too far outside the box. You may spend from this pool to opt on any skill check to try something unexpected (like firing blind or using the wrong end of a toolkit). When you do so, roll a separate die along with your skill check. An odd die result is added to your skill check total. An even numbered result is subtracted. You may reroll the die by spending from this pool (or luck). This die is not a skill check die so not subject to professional reroll or reroll from special abilities.Science"
+	"Description": "You think outside the box. Some might say too far outside the box. You may spend from this pool to opt on any skill check to try something unexpected (like firing blind or using the wrong end of a toolkit). When you do so, roll a separate die along with your skill check. An odd die result is added to your skill check total. An even numbered result is subtracted. You may reroll the die by spending from this pool (or luck). This die is not a skill check die so not subject to professional reroll or reroll from special abilities.",
+	"Pool": "Science"
 }, {
 	"Name": "Unflappable",
-	"Description": "Your vast experience has developed your cool nerve and an uncanny ability to ignore distraction. You may choose to ignore a total of up to -3 in penalties each time you use this ability. You cannot apply this ability more than once to a given action.Rank"
+	"Description": "Your vast experience has developed your cool nerve and an uncanny ability to ignore distraction. You may choose to ignore a total of up to -3 in penalties each time you use this ability. You cannot apply this ability more than once to a given action.",
+	"Pool": "Rank"
 }, {
 	"Name": "Uniminded (Psionic) L.O.S.",
 	"Description": "You may use an ally's skill instead of your own as long as that ally is within Line Of Sight.",
@@ -489,7 +502,8 @@
 	"Pool": "10"
 }, {
 	"Name": "Wake Rider",
-	"Description": "Explosion dice that would damage your microship move you one hex directly away from the epicenter instead  for each level of explosion. You get your choice of direction if you are in the hex of explosion origination.Also, once per phase you may do one of the following:When you move as your move action, friendly fighters and drones that have not yet moved this turn may spend their move action to move with you without making a pilot check for distance.orWhen another fighter, installation, or ship moves, you may move with it as a free action. This does not expend your move action."
+	"Description": "Explosion dice that would damage your microship move you one hex directly away from the epicenter instead  for each level of explosion. You get your choice of direction if you are in the hex of explosion origination.Also, once per phase you may do one of the following:When you move as your move action, friendly fighters and drones that have not yet moved this turn may spend their move action to move with you without making a pilot check for distance.",
+	"Pool": "orWhen another fighter, installation, or ship moves, you may move with it as a free action. This does not expend your move action."
 }, {
 	"Name": "Weapons Officer",
 	"Description": "You know how to place your shots for maximum effect. You may reroll one hit allocation and damage die in each shot you take with a fighter or direct fire ship's weapon. This ability does not apply to Missiles or Teleporter bombs."
