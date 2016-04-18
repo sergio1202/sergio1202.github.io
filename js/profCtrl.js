@@ -105,9 +105,12 @@
 		stats["misc2"] = $scope.misc2;
 		stats['selectedSpecies'] = $scope.selectedSpecies;
 		stats['notes'] = $scope.notes;
+		stats['abilities'] = $scope.abilities;
+		stats['items'] = $scope.items;
 		if(!$scope.saved) $scope.saved = {};
 		$scope.saved[$scope.name] = stats;
 		localStorage.setItem('char', JSON.stringify($scope.saved));
+		console.log("saving");
 		console.log($scope.saved);
 		//$scope.saved = JSON.parse(localStorage.getItem('char'));
 
@@ -117,6 +120,8 @@
 		console.log($scope.loadName);
 		var name = $scope.loadName;
 		if(name) {
+			console.log("loading:");
+			console.log($scope.saved);
 			$scope.name = $scope.saved[name]['name'];
 			$scope.selectedProfession = $scope.saved[name]['profession'];
 			$scope.rank = $scope.saved[name]['rank'];
@@ -129,6 +134,8 @@
 			$scope.misc2 = $scope.saved[name]['misc2'];
 			$scope.selectedSpecies = $scope.saved[name]['selectedSpecies'];
 			$scope.notes = $scope.saved[name]['notes'];
+			if($scope.saved[name]['abilities']) $scope.abilities = $scope.saved[name]['abilities'];
+			if($scope.saved[name]['items']) $scope.items = $scope.saved[name]['items'];
 		}
 	};
 	
@@ -152,7 +159,30 @@
 				return false;
 			}
 			console.log(  index );
-});
+		});
+	};
+	
+	$scope.addAbility = function () {
+		var added = false;
+		$.each($scope.abilities, function( index, value ) {
+			var ability = $scope.selectedAbility;
+			if(!ability) {
+				alert("select an ability");
+				console.log("no ability selected");
+				return false;
+			}
+			//console.log($scope.selectedItem);
+			if(!value.name && !added) {
+				added = true;
+				//console.log( "adding to " + index + ", " + value.Name );
+				$scope.abilities[index].name = ability.Name;
+				$scope.abilities[index].notes = ability.Pool;
+				
+				//console.log($scope.items[index]);
+				return false;
+			}
+			console.log(  index );
+		});
 	};
 	
 
