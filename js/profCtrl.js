@@ -9,6 +9,7 @@
 	$scope.luck = $scope.rank + 5;
 	$scope.carry = $scope.athletics * 10; 
 	$scope.selectedSpecies = null;
+	$scope.TotalMass = 0;
 	
 	$scope.rankChange = function() {
 		if($scope.selectedSpecies) {
@@ -67,7 +68,7 @@
     });
 	
 	$scope.items = [];
-    for (var i = 1; i < 18; i++) {
+    for (var i = 1; i < 17; i++) {
         $scope.items.push({
             name: '',
             mass: '', 
@@ -90,6 +91,13 @@
 	if($scope.saved != null) {
 		$scope.names = Object.keys($scope.saved);
 	}
+	
+	$scope.updateMass = function() {
+		$scope.TotalMass = 0;
+		$.each($scope.items, function(index, value) {
+			$scope.TotalMass += value.mass;
+		});
+	};
 
 	$scope.saveCharacter = function() {
 		if(!$scope.name) {
@@ -97,6 +105,12 @@
 			return;
 		}
 		//console.log("name: " + $scope.name);
+		console.log(".." + $scope.items.length);
+		if($scope.items.length > 16) {
+			$scope.items.splice(16, 1);
+			console.log("--" + $scope.items.length);
+
+		}
 		var stats = {};
 		stats["name"] = $scope.name;
 		stats["rank"] = $scope.rank;
@@ -151,6 +165,7 @@
 					});
 				});
 			}
+			$scope.updateMass();
 		}
 	};
 	
@@ -173,8 +188,8 @@
 				//console.log($scope.items[index]);
 				return false;
 			}
-			console.log(  index );
 		});
+		$scope.updateMass();
 	};
 	
 	$scope.addAbility = function () {
