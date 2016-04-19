@@ -20,6 +20,7 @@ table, th, td {
 }
 td > input {
 	border: 0px solid;
+	text-align: right;
 }
 @media print
 {    

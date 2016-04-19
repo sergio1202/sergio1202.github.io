@@ -29,7 +29,7 @@
 				<tr>
 					<td style="background-color:black; color:white;">NAME:</td>
 					<td colspan="4">
-						<input type="text" style="width: 100%;" ng-model="name" placeholder="name" >
+						<input type="text" style="width: 100%; text-align: left" ng-model="name" placeholder="name">
 					</td>
 					<td class="light-gray" style="width: 0.9in;">RANK:</td>
 					<td  >
@@ -70,8 +70,10 @@
 				</tr>
 				<tr>
 					<td>ALIEN ABILITY:</td>
-					<td colspan="4">
+					<td colspan="4" >
+					<div style="max-height:175px; min-height: 42px; overflow:auto; text-align: left">
 						<span>{{selectedSpecies.SpecialAbility}}</span>
+						</div>
 					</td>
 					<td >#HANDS:</td>
 					<td >
@@ -91,6 +93,13 @@
 						<span>{{selectedSpecies.BaseHitPoints}}</span>
 					</td>
 				</tr>
+				<tr ng-repeat="stat in stats" style="height: 21px; max-height: 21px;">
+					<td><input type="text" ng-model="stat.Name"></td>
+					<td><input type="number" ng-model="stat.Value" ng-change="statChange()"></td>
+					<td><input type="number" ng-model="stat.Mod"></td>
+					<td colspan="4"><input type="text" ng-model="stat.Note" ></td>
+				</tr>
+				<!--
 				<tr>
 					<td>ATHLETICS:</td>
 					<td >
@@ -150,7 +159,7 @@
 					<td >
 						<input type="number" ng-model="misc1_mod" >
 					</td>
-				</td>
+				</tr>
 				<tr>
 					<td></td>
 					<td >
@@ -160,6 +169,7 @@
 						<input type="number" ng-model="misc2_mod" >
 					</td>
 				</tr>
+				-->
 				<tr>
 					<td class="light-gray">EXPERIENCE</td>
 					<td colspan="2">
@@ -202,10 +212,10 @@
 								<td class="white-on-black">STATUS</td>
 							</tr>
 							<tr ng-repeat="item in items" style="height: 21px; max-height: 21px;">
-								<td><input type="text" ng-model="item.name"></td>
+								<td><input type="text" ng-model="item.name" style="text-align: left;" ></td>
 								<td><input type="number" ng-model="item.mass"></td>
-								<td><input type="text" ng-model="item.notes"></td>
-								<td><input type="text" ng-model="item.status"></td>
+								<td><input type="text" ng-model="item.notes" style="text-align: left;" ></td>
+								<td><input type="text" ng-model="item.status" style="text-align: left;" ></td>
 							</tr>
 						</table>
 					</td>
@@ -225,8 +235,8 @@
 								<td class="white-on-black">USED</td>
 							</tr>
 							<tr ng-repeat="ability in abilities" style="height: 21px">
-								<td><input type="text" ng-model="ability.name"></td>
-								<td><input type="text" ng-model="ability.notes"></td>
+								<td><input type="text" ng-model="ability.name" style="text-align: left;" ></td>
+								<td><input type="text" ng-model="ability.notes" style="text-align: left;" ></td>
 								<td><input type="text" ng-model="ability.pool"></td>
 								<td><input type="text" ng-model="ability.used"></td>
 							</tr>

@@ -3,13 +3,6 @@
 	$scope.name;
 	$scope.rank = 1;
     $scope.professions = ['Marine', 'Engineer', 'Pilot', 'Scientist'];
-	$scope.athletics = 1;
-	$scope.combat = 0;
-	$scope.engineering = 0;
-	$scope.piloting = 0;
-	$scope.science = 0;
-	$scope.misc1 = 0;
-	$scope.misc2 = 0;
 	
 	$scope.baseHp = 0;
 	$scope.hp = $scope.athletics + $scope.rank + $scope.baseHp;
@@ -21,11 +14,23 @@
 		if($scope.selectedSpecies) {
 			$scope.baseHp = Number($scope.selectedSpecies.BaseHitPoints);
 		}
+		var athletics = ($scope.stats && $scope.stats[0]) ? $scope.stats[0]['Value'] : 0; // ATHLETICS should be first stat
 		$scope.luck = $scope.rank + 5;
-		$scope.carry = $scope.athletics * 10;
-		$scope.hp = $scope.athletics + $scope.rank + $scope.baseHp;
+		$scope.carry = athletics * 10;
+		$scope.hp = athletics + $scope.rank + $scope.baseHp;
 	};
 	$scope.rankChange();
+	
+	$scope.statNames = ['ATHLETICS', 'COMBAT', 'ENGINEERING', 'PILOTING', 'SCIENCE', '', ''];
+	$scope.stats = [];
+	$.each($scope.statNames, function( index, value ) {
+        $scope.stats.push({
+            Name: value,
+            Value: (value == '' ? '' : 0), 
+            Mod: '',
+			Note: ''
+        });
+    });
 	
 	$scope.statChange = function () {
 		$scope.rankChange();
@@ -107,6 +112,7 @@
 		stats['notes'] = $scope.notes;
 		stats['abilities'] = $scope.abilities;
 		stats['items'] = $scope.items;
+		stats['stats'] = $scope.stats;
 		if(!$scope.saved) $scope.saved = {};
 		$scope.saved[$scope.name] = stats;
 		localStorage.setItem('char', JSON.stringify($scope.saved));
@@ -117,7 +123,7 @@
 		$scope.names = Object.keys($scope.saved);
 	};
 	$scope.loadCharacter = function() {
-		console.log($scope.loadName);
+		//console.log($scope.loadName);
 		var name = $scope.loadName;
 		if(name) {
 			console.log("loading:");
@@ -125,17 +131,26 @@
 			$scope.name = $scope.saved[name]['name'];
 			$scope.selectedProfession = $scope.saved[name]['profession'];
 			$scope.rank = $scope.saved[name]['rank'];
-			$scope.athletics = $scope.saved[name]['athletics'];
-			$scope.combat = $scope.saved[name]['combat'];
-			$scope.engineering = $scope.saved[name]['engineering'];
-			$scope.piloting = $scope.saved[name]['piloting'];
-			$scope.science = $scope.saved[name]['science'];
-			$scope.misc1 = $scope.saved[name]['misc1'];
-			$scope.misc2 = $scope.saved[name]['misc2'];
 			$scope.selectedSpecies = $scope.saved[name]['selectedSpecies'];
 			$scope.notes = $scope.saved[name]['notes'];
+			$scope.stats = $scope.saved[name]['stats'];
 			if($scope.saved[name]['abilities']) $scope.abilities = $scope.saved[name]['abilities'];
 			if($scope.saved[name]['items']) $scope.items = $scope.saved[name]['items'];
+			if(!$scope.stats) {
+				// var statValues = ['ATHLETICS', 'COMBAT', 'ENGINEERING', 'PILOTING', '', ''];
+				var statValues = [$scope.saved[name]['athletics'], $scope.saved[name]['combat'], $scope.saved[name]['engineering'], $scope.piloting = $scope.saved[name]['piloting'],
+					$scope.saved[name]['science'], $scope.saved[name]['misc1'], $scope.saved[name]['misc2']];
+				
+				$scope.stats = [];
+				$.each($scope.statNames, function( index, value ) {
+					$scope.stats.push({
+						Name: value,
+						Value: (value == '' && statValues[index] == 0 ? '' : statValues[index]), 
+						Mod: '',
+						Note: ''
+					});
+				});
+			}
 		}
 	};
 	
