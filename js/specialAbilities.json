@@ -113,7 +113,10 @@
 	"Pool": "Diplomacy x2"
 }, {
 	"Name": "Dirty Fighter",
-	"Description": "When you deal personal damage to a target with a direct attack you hit them in a place that counts. They are at a penalty of -3 on all active skill checks until they are fully healed.You also may make a coup de grace attack as an action (see page xxx) without spending the prepare action first.Displaced (Psionic)You may engage this power as a free action even in response to another character's action even after attack dice are thrown. Your personal target number is 3 higher than normal until the end of the Phase. Multiple uses of this power stack.",
+	"Description": "When you deal personal damage to a target with a direct attack you hit them in a place that counts. They are at a penalty of -3 on all active skill checks until they are fully healed.You also may make a coup de grace attack as an action (see page xxx) without spending the prepare action first."
+}, {
+	"Name": "Displaced (Psionic)",
+	"Description": "You may engage this power as a free action even in response to another character's action even after attack dice are thrown. Your personal target number is 3 higher than normal until the end of the Phase. Multiple uses of this power stack.",
 	"Pool": "Athletics + Psionics"
 }, {
 	"Name": "Doctor",
@@ -127,7 +130,8 @@
 	"Description": "MOVING THIS TO MIND MENDER"
 }, {
 	"Name": "Empowered (Psionic)",
-	"Description": "As long as you are on an Engine battlestation, You may spend from this pool to allow you to use Engine Power as though it were Luck.Engineering  + Psionics"
+	"Description": "As long as you are on an Engine battlestation, You may spend from this pool to allow you to use Engine Power as though it were Luck.",
+	"Pool": "Engineering + Psionics"
 }, {
 	"Name": "EMT",
 	"Description": "Emergency Medical Training makes you always ready to heal. If you have a MedKit in hand, you may spend from this pool to perform a preventative healing action as a free action out of turn on any adjacent target (or yourself) as the damage is dealt. You cannot heal more damage than is dealt. You may use this ability a maximum of once per phase.",
@@ -158,9 +162,6 @@
 }, {
 	"Name": "Fast Talker",
 	"Description": "You may make a Diplomacy action at a -3 penalty as a free action a maximum of once per phase when you do not take another Diplomacy Action in that phase including free diplomacy actions."
-}, {
-	"Name": "A canosian Engineer is in an engine, turning three valves, pulling 2 levers and typing on a keyboard. Power levels on the monitor are climbing and steam is blasting out all over through safety valves. Heat waves are rolling off the equipment.",
-	"Description": ""
 }, {
 	"Name": "Fated",
 	"Description": "You may choose the result of the first and last points of luck you use in a campaign turn instead of rerolling with it."
@@ -297,11 +298,14 @@
 }, {
 	"Name": "Nimble",
 	"Description": "Either before or after taking an action or moving, you may spend from this pool to take a bonus action at a penalty of -3 to your skill check (or -3 to your move if your nimble action is to move). This ability may be used a maximum of once per phase.",
-	"Pool": "Athletics",
-	"Pool": "NobleYou get an allowance from your estates. At the end of each campaign turn (right after requisitions) roll a number of dice equal to your rank and collect a number of credits equal to 100 times the total. This  roll is luckable."
+	"Pool": "Athletics"
+}, {
+	"Name": "Noble",
+	"Description": "You get an allowance from your estates. At the end of each campaign turn (right after requisitions) roll a number of dice equal to your rank and collect a number of credits equal to 100 times the total. This  roll is luckable."
 }, {
 	"Name": "Numb Runner",
-	"Description": "You've learned how to cope with being under the effects of controlled substances. You may spend from this pool to ignore the negative effects that would be imposed by drugs or toxins for one phase.  This includes needler toxins and drugs. You may choose which effect(s) you wish to ignore. You may also spend from this pool to administer a drug as a free action at most once per phase.Athletics x 2"
+	"Description": "You've learned how to cope with being under the effects of controlled substances. You may spend from this pool to ignore the negative effects that would be imposed by drugs or toxins for one phase.  This includes needler toxins and drugs. You may choose which effect(s) you wish to ignore. You may also spend from this pool to administer a drug as a free action at most once per phase.",
+	"Pool": "Athletics x2"
 }, {
 	"Name": "Obsessive",
 	"Description": "Whenever you spend a second or subsequent luck on something, you create a pool of 3 rerolls you may use on that same thing instead of 1 single reroll."
@@ -349,11 +353,15 @@
 }, {
 	"Name": "Psychic Shifter (Psionic)",
 	"Description": "Psionics vs. 8Move ActionMove to any square in the  module you are in as your move action. Each point of success allows you to move one module further.",
-	"Pool": "Piloting + PsionicsPsychic Stunner (Psionic)Free ActionAfter any direct personal attack you successfully make, you may add a Stun effect (see page xxx).",
+	"Pool": "Piloting + Psionics"
+}, {
+	"Name": "Psychic Stunner (Psionic)",
+	"Description": "Free ActionAfter any direct personal attack you successfully make, you may add a Stun effect (see page xxx).",
 	"Pool": "Athletics + Psionics"
 }, {
 	"Name": "Puppeteer (Psionic) (Action) (L.O.S.)",
-	"Description": "Psionics vs. 11+ Target's RankChoose the target's next action. It cannot be an action to directly harm themselves but their ship and their crew are fair game.Diplomacy +Psionics"
+	"Description": "Psionics vs. 11+ Target's RankChoose the target's next action. It cannot be an action to directly harm themselves but their ship and their crew are fair game.",
+	"Pool": "Diplomacy + Psionics"
 }, {
 	"Name": "Quartermaster",
 	"Description": "You may assist any number of adjacent characters during the upgrade portion of the campaign turn. Upgrades are free for you in campaigns where they would otherwise have a cost (PoT, HMFYP)."
@@ -375,8 +383,10 @@
 }, {
 	"Name": "Research Specialist",
 	"Description": "Your data retrieval skills are unparalleled (and unserialed!) You always count only half the used markers on the Science Bay for penalties (round up).  Furthermore, you may spend from this pool to reroll any use of the Science Bay.",
-	"Pool": "Science x2",
-	"Pool": "ResourcefulYou may spend from this pool to use Science or Engineering (whichever is higher) to substitute for any other skill check. You will get a professional reroll on the skill check.Engineering or Science (whichever is lower)"
+	"Pool": "Science x2"
+}, {
+	"Name": "Resourceful",
+	"Description": "You may spend from this pool to use Science or Engineering (whichever is higher) to substitute for any other skill check. You will get a professional reroll on the skill check.Engineering or Science (whichever is lower)"
 }, {
 	"Name": "Rolls With It",
 	"Description": "You know how to take the rhythms of the ship into account. Spend from this pool to count OOC as a bonus instead of a penalty to your action or move.",

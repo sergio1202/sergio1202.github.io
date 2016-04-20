@@ -10,6 +10,9 @@
 	$scope.carry = $scope.athletics * 10; 
 	$scope.selectedSpecies = null;
 	$scope.TotalMass = 0;
+	$scope.credits = 0;
+	$scope.exp = 0;
+	$scope.prestige = 0;
 	
 	$scope.rankChange = function() {
 		if($scope.selectedSpecies) {
@@ -127,6 +130,10 @@
 		stats['abilities'] = $scope.abilities;
 		stats['items'] = $scope.items;
 		stats['stats'] = $scope.stats;
+		$scope.saved[name]['exp'] = $scope.exp;
+		$scope.saved[name]['prestige'] = $scope.prestige;
+		$scope.saved[name]['credits'] = $scope.credits;
+
 		if(!$scope.saved) $scope.saved = {};
 		$scope.saved[$scope.name] = stats;
 		localStorage.setItem('char', JSON.stringify($scope.saved));
@@ -148,6 +155,10 @@
 			$scope.selectedSpecies = $scope.saved[name]['selectedSpecies'];
 			$scope.notes = $scope.saved[name]['notes'];
 			$scope.stats = $scope.saved[name]['stats'];
+			$scope.exp = $scope.saved[name]['exp'];
+			$scope.prestige = $scope.saved[name]['prestige'];
+			$scope.credits = $scope.saved[name]['credits'];
+
 			if($scope.saved[name]['abilities']) $scope.abilities = $scope.saved[name]['abilities'];
 			if($scope.saved[name]['items']) $scope.items = $scope.saved[name]['items'];
 			if(!$scope.stats) {
