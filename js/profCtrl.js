@@ -9,10 +9,10 @@
 	$scope.luck = $scope.rank + 5;
 	$scope.carry = $scope.athletics * 10; 
 	$scope.selectedSpecies = null;
-	$scope.TotalMass = 0;
-	$scope.credits = 0;
-	$scope.exp = 0;
-	$scope.prestige = 0;
+	$scope.TotalMass = '';
+	$scope.credits = '';
+	$scope.exp = '';
+	$scope.prestige = '';
 	
 	$scope.rankChange = function() {
 		if($scope.selectedSpecies) {
