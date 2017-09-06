@@ -9,7 +9,7 @@
 }, {
 	"Species": "Blootian",
 	"BaseHitPoints": "0",
-	"TargetNumber": "11",
+	"TargetNumber": "11 - 0-4",
 	"Hands": "1+,1-4",
 	"Move": "2+,1-4",
 	"WearsArmor": "N",
@@ -27,7 +27,7 @@
 	"BaseHitPoints": "4",
 	"TargetNumber": "8",
 	"Hands": "2",
-	"Move": "4",
+	"Move": "3",
 	"WearsArmor": "Y",
 	"SpecialAbility": "Bifurcation: You get two separate phases each phase as if you were two characters with the same body. All active skill check actions in phases (not upgrades, requisitions) are at a -3 penalty."
 }, {
@@ -123,7 +123,7 @@
 	"BaseHitPoints": "2",
 	"TargetNumber": "11",
 	"Hands": "∞*",
-	"Move": "6",
+	"Move": "4",
 	"WearsArmor": "N",
 	"SpecialAbility": "Alien Ability: Tiny: Divide carry by 2. You don't slag squares you occupy and occupied squares aren't slagged for you (jetpack restrictions still apply). You are not entitled to take free attacks on things entering your square., Featherweight: Suffer ½  damage (round down). Convert the rest into movement you must spend immediately. You may not enter a square you have already been in with this movement. If forced to do so, it becomes damage. Getting moved through occupied squares subjects you to free attacks."
 }, {
@@ -149,7 +149,7 @@
 	"Hands": "2",
 	"Move": "4",
 	"WearsArmor": "N",
-	"SpecialAbility": "Wings: Ignore OOC for movement purposes  May move a number of their moves as automatically successful Jet moves equal to your Athletics. See Jet moves page xxx."
+	"SpecialAbility": "Wings: Ignore OOC for movement purposes  May move a number of their moves as automatically successful Jet moves equal to your Athletics. See Jet moves page 33."
 }, {
 	"Species": "Cheetahoid",
 	"BaseHitPoints": "4",
@@ -165,7 +165,7 @@
 	"Hands": "2",
 	"Move": "5",
 	"WearsArmor": "N",
-	"SpecialAbility": "Patient: (see Patient special ability page xxx) Bite: Your unarmed attack deals1d6 damage Thick Hide: 1 point natural armor"
+	"SpecialAbility": "Patient: (see Patient special ability page 57) Bite: Your unarmed attack deals1d6 damage Thick Hide: 1 point natural armor"
 }, {
 	"Species": "Elephantoid",
 	"BaseHitPoints": "9",
@@ -187,9 +187,9 @@
 	"BaseHitPoints": "6",
 	"TargetNumber": "7",
 	"Hands": "4",
-	"Move": "3",
+	"Move": "2",
 	"WearsArmor": "Y",
-	"SpecialAbility": "Fistwalk: Add free hands to move value. Tough: See Tough special ability page xxx."
+	"SpecialAbility": "Fistwalk: Add free hands to move value. Tough: See Tough special ability page 68."
 }, {
 	"Species": "Lupinoids, Caninoids",
 	"BaseHitPoints": "5",
@@ -213,7 +213,7 @@
 	"Hands": "2",
 	"Move": "6",
 	"WearsArmor": "N",
-	"SpecialAbility": "Charger: See Charger special ability page xxx except may use horn for this attack. Horn: Your unarmed attack deals1d6 damage Thick Hide: 1 point natural armor"
+	"SpecialAbility": "Charger: See Charger special ability page 55 except may use horn for this attack. Horn: Your unarmed attack deals1d6 damage Thick Hide: 1 point natural armor"
 }, {
 	"Species": "Reptilianoid (Snakoid)",
 	"BaseHitPoints": "4",
@@ -221,7 +221,7 @@
 	"Hands": "2",
 	"Move": "5",
 	"WearsArmor": "N",
-	"SpecialAbility": "Bite: Your unarmed attack deals1d6 damage. Poisonous bite: Anyone bit by a snake suffers as if hit by Oucho toxin (page xxx)."
+	"SpecialAbility": "Bite: Your unarmed attack deals1d6 damage. Poisonous bite: Anyone bit by a snake suffers as if hit by Oucho toxin (page 97)."
 }, {
 	"Species": "Testudinoid (Turtloid)",
 	"BaseHitPoints": "2",
@@ -229,7 +229,7 @@
 	"Hands": "2",
 	"Move": "4",
 	"WearsArmor": "N",
-	"SpecialAbility": "Shell: Reduce all damage by one point per die. Braced: See Braced special ability page xxx."
+	"SpecialAbility": "Shell: Reduce all damage by one point per die. Braced: See Braced special ability page 55."
 }, {
 	"Species": "Ursinoid",
 	"BaseHitPoints": "9",
@@ -237,5 +237,5 @@
 	"Hands": "2",
 	"Move": "5",
 	"WearsArmor": "N",
-	"SpecialAbility": "Death Marcher: See  special ability page xxx. This is already figured into your base hit points. Thick Hide: 1 point natural armor. Claws: Your unarmed attack deals1d6 damage"
+	"SpecialAbility": "Death Marcher: See  special ability page 56. This is already figured into your base hit points. Thick Hide: 1 point natural armor. Claws: Your unarmed attack deals1d6 damage"
 }]
