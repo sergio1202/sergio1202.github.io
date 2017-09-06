@@ -111,14 +111,6 @@
 	"WearsArmor": "N",
 	"SpecialAbility": "Carapace: -2 points of damage from all sources."
 }, {
-	"Species": "ADVANCED SPECIES",
-	"BaseHitPoints": "",
-	"TargetNumber": "",
-	"Hands": "",
-	"Move": "",
-	"WearsArmor": "",
-	"SpecialAbility": "These Species aren't necessarily more effective than the others but they are more challenging to play. Beginning players are strongly encouraged to select other species."
-}, {
 	"Species": "Chronosian (Advanced)",
 	"BaseHitPoints": "7",
 	"TargetNumber": "8",
@@ -150,14 +142,6 @@
 	"Move": "0",
 	"WearsArmor": "N",
 	"SpecialAbility": "Immense: You occupy each square of the module you are in (slagging them for others). You cannot leave the module except at a specially equipped starbase. You can reach into the first square of each adjacent module. You cannot grapple or be grappled but you can as an action pick up an unresisting character and deposit them in any square in your module or adjacent to the first square of adjacent modules. You may ignore 2 OOC. You suffer half damage from all sources (round up)."
-}, {
-	"Species": "(Beastmen)",
-	"BaseHitPoints": "?",
-	"TargetNumber": "?",
-	"Hands": "?",
-	"Move": "?",
-	"WearsArmor": "?",
-	"SpecialAbility": "Varies"
 }, {
 	"Species": "Avianoid",
 	"BaseHitPoints": "3",
