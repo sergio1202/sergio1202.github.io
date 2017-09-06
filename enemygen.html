@@ -1,0 +1,89 @@
+<head>
+	<title>Battlestations Enemy Generator</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="cs/bs-sheet.css">
+      <!-- Modules -->
+    <script src="js/profApp.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/enemyGenCtrl.js"></script>
+
+</head>
+<body ng-app="profApp" ng-controller="enemyGenCtrl">
+	<div class="container-fluid" style="width: 7.5in; ">
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Mission Difficulty</h3>
+				<select ng-model="md" ng-options="n for n in [] | range:1:10"></select>
+			</div>
+			<div class="col-md-6">
+				<h3>Player Count</h3>
+				<select ng-model="playerCount" ng-options="n for n in [] | range:1:10"></select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Species</h3>
+				
+				<div style="width:100%;">
+					<select ng-model="selectedSpecies" ng-options="s.Species for s in species " 
+						ng-change="rankChange()" style="width: 100%">
+						<option value="">Please select a species...</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-6">
+						<h3># Hands</h3>
+						<span>{{selectedSpecies.Hands}}</span>
+					</div>
+					<div class="col-md-6">
+						<h3>Hit Points</h3>
+						<span>{{hitPoints}}</span>
+					</div>
+					</div><div class="row">
+					<h3>Alien Ability</h3>
+					<span>{{selectedSpecies.SpecialAbility}}</span>
+					</div>
+
+			</div>
+
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<form data-ng-submit="generateEnemy()" >
+					<input type="submit" value="Generate Enemy" class="btn btn-primary" />
+				</form>
+			</div>
+
+		</div>
+			<br>
+
+		<div class="row" style="font-weight: bold;">
+			<div class="col-md-2">Profession</div>
+			<div class="col-md-2">Athletics</div>
+			<div class="col-md-2">Combat</div>
+			<div class="col-md-2">Engineering</div>
+			<div class="col-md-2">Piloting</div>
+			<div class="col-md-2">Science</div>
+		</div>
+		<br>
+		<div class="row" ng-repeat="e in enemies | orderBy : 'profession'">
+			<div class="col-md-2">{{ e.profession }}</div>
+			<div class="col-md-2">{{ e.athletics }}</div>
+			<div class="col-md-2">{{ e.combat }}</div>
+			<div class="col-md-2">{{ e.engineering }}</div>
+			<div class="col-md-2">{{ e.piloting }}</div>
+			<div class="col-md-2">{{ e.science }}</div>
+			<div class="col-md-8">{{ e.gear }}</div>
+		</div>
+	</div>
+</body>

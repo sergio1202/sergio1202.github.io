@@ -14,6 +14,7 @@
 	$scope.exp = '';
 	$scope.prestige = '';
 	
+	
 	$scope.rankChange = function() {
 		if($scope.selectedSpecies) {
 			$scope.baseHp = Number($scope.selectedSpecies.BaseHitPoints);
@@ -202,6 +203,7 @@
 		});
 		$scope.updateMass();
 	};
+	
 	
 	$scope.addAbility = function () {
 		var added = false;

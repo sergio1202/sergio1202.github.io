@@ -1,0 +1,15 @@
+ [{
+ 	"Name": "Arc Laser",
+ 	"Cost": "600",
+ 	"Mass": "7",
+ 	"Energized": "y",
+ 	"Req": "10",
+ 	"Effect": "1d6 damage (ignore Damage Reduction).  Area Effect (indirect)."
+ }, {
+ 	"Name": "Skeletal Enhance",
+ 	"Cost": "1500",
+ 	"Mass": "0",
+ 	"Energized": "y",
+ 	"Req": "15",
+ 	"Effect": "Increase carry by 10. Upgrade increases carry by 5 more."
+ }]
