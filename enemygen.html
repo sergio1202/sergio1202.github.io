@@ -29,35 +29,47 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<h3>Species</h3>
-				
-				<div style="width:100%;">
-					<select ng-model="selectedSpecies" ng-options="s.Species for s in species " 
-						ng-change="rankChange()" style="width: 100%">
-						<option value="">Random Species</option>
-					</select>
-				</div>
-			</div>
-			<div class="col-md-6">
 				<div class="row">
-					<div class="col-md-6">
-						<h3># Hands</h3>
-						<span>{{selectedSpecies.Hands}}</span>
+					<h3>Species</h3>
+					
+					<div style="width:100%;">
+						<select ng-model="selectedSpecies" ng-options="s.Species for s in species " 
+							ng-change="rankChange()" style="width: 100%">
+							<option value="">Random Species</option>
+						</select>
 					</div>
-					<div class="col-md-6">
-						<h3>Hit Points</h3>
-						<span>{{hitPoints}}</span>
-					</div>
-					</div><div class="row">
+				</div><div class="row" style="max-height:175px; min-height: 84px; overflow:auto; text-align: left">
 					<h3>Alien Ability</h3>
 					<span>{{selectedSpecies.SpecialAbility}}</span>
 					</div>
 
 			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-6">
+						<h3>Target #</h3>
+						<span>{{selectedSpecies.TargetNumber}}</span>
+					</div>
+					<div class="col-md-6">
+						<h3>Hit Points</h3>
+						<span>{{hitPoints}}</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<h3>Move</h3>
+						<span>{{selectedSpecies.Move}}</span>
+					</div>
+					<div class="col-md-6">
+						<h3># Hands</h3>
+						<span>{{selectedSpecies.Hands}}</span>
+					</div>
+				</div>
+			</div>
 
 		</div>
 		<br>
-		<div class="row">
+		<div class="row no-print">
 			<div class="col-md-6">
 				<form data-ng-submit="generateEnemy()" >
 					<input type="submit" value="Generate Enemy" class="btn btn-primary" />
