@@ -8,6 +8,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="cs/bs-sheet.css">
+	<link rel="stylesheet" type="text/css" media="print" href="cs/bs-sheet.css">
       <!-- Modules -->
     <script src="js/profApp.js"></script>
 
@@ -18,17 +19,17 @@
 <body ng-app="profApp" ng-controller="enemyGenCtrl">
 	<div class="container-fluid" style="width: 7.5in; ">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-6">
 				<h3>Mission Difficulty</h3>
 				<select ng-model="md" ng-options="n for n in [] | range:1:10"></select>
 			</div>
-			<div class="col-md-6">
+			<div class="col-xs-6">
 				<h3>Player Count</h3>
 				<select ng-model="playerCount" ng-options="n for n in [] | range:1:10"></select>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-6">
 				<div class="row">
 					<h3>Species</h3>
 					
@@ -44,23 +45,23 @@
 					</div>
 
 			</div>
-			<div class="col-md-6">
+			<div class="col-xs-6">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-xs-6">
 						<h3>Target #</h3>
 						<span>{{selectedSpecies.TargetNumber}}</span>
 					</div>
-					<div class="col-md-6">
+					<div class="col-xs-6">
 						<h3>Hit Points</h3>
 						<span>{{hitPoints}}</span>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-xs-6">
 						<h3>Move</h3>
 						<span>{{selectedSpecies.Move}}</span>
 					</div>
-					<div class="col-md-6">
+					<div class="col-xs-6">
 						<h3># Hands</h3>
 						<span>{{selectedSpecies.Hands}}</span>
 					</div>
@@ -70,7 +71,7 @@
 		</div>
 		<br>
 		<div class="row no-print">
-			<div class="col-md-6">
+			<div class="col-xs-6">
 				<form data-ng-submit="generateEnemy()" >
 					<input type="submit" value="Generate Enemy" class="btn btn-primary" />
 				</form>
@@ -80,22 +81,22 @@
 			<br>
 
 		<div class="row" style="font-weight: bold;">
-			<div class="col-md-2">Profession</div>
-			<div class="col-md-2">Athletics</div>
-			<div class="col-md-2">Combat</div>
-			<div class="col-md-2">Engineering</div>
-			<div class="col-md-2">Piloting</div>
-			<div class="col-md-2">Science</div>
+			<div class="col-xs-2">Profession</div>
+			<div class="col-xs-2">Athletics</div>
+			<div class="col-xs-2">Combat</div>
+			<div class="col-xs-2">Engineering</div>
+			<div class="col-xs-2">Piloting</div>
+			<div class="col-xs-2">Science</div>
 		</div>
 		<br>
 		<div class="row" ng-repeat="e in enemies | orderBy : 'profession'">
-			<div class="col-md-2">{{ e.profession }}</div>
-			<div class="col-md-2">{{ e.athletics }}</div>
-			<div class="col-md-2">{{ e.combat }}</div>
-			<div class="col-md-2">{{ e.engineering }}</div>
-			<div class="col-md-2">{{ e.piloting }}</div>
-			<div class="col-md-2">{{ e.science }}</div>
-			<div class="col-md-8">{{ e.gear }}</div>
+			<div class="col-xs-2">{{ e.profession }}</div>
+			<div class="col-xs-2">{{ e.athletics }}</div>
+			<div class="col-xs-2">{{ e.combat }}</div>
+			<div class="col-xs-2">{{ e.engineering }}</div>
+			<div class="col-xs-2">{{ e.piloting }}</div>
+			<div class="col-xs-2">{{ e.science }}</div>
+			<div class="col-xs-8">{{ e.gear }}</div>
 		</div>
 	</div>
 </body>
