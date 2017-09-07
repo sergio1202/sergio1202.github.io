@@ -1,3 +1,142 @@
+function d6() {
+	return Math.floor(Math.random() * 6) + 1;
+}
+
+
+function getSpecies(species) {
+	var findSpecies = function (value) {
+		//console.log(this);
+		//console.log(value.Species);
+		return value.Species == this;
+	};
+	var roll = Number(d6() + "" + d6() + "" + d6());
+	// console.log(roll);
+	//var bot = species.filter(findSpecies, 'Bot (sentient)');
+	//console.log(bot[0]);
+	if(roll <= 116 ) {
+		return species.filter(findSpecies, 'Bot (sentient)');
+	} else if (roll >= 121 && roll <= 126) {
+		// blootian
+		return species.filter(findSpecies, 'Blootian')[0];
+	}
+	else if (roll >= 131 && roll <= 156) {
+		// canosian
+		return species.filter(findSpecies, 'Canosian')[0];
+	}
+	else if (roll >= 131 && roll <= 156) {
+		// diplid
+		return species.filter(findSpecies, 'Diploid')[0];
+	}
+	else if (roll >= 211 && roll <= 226) {
+		// fungaloid
+		return species.filter(findSpecies, 'Fungaloid')[0];
+	}
+	else if (roll >= 231 && roll <= 326) {
+		// human
+		return species.filter(findSpecies, 'Human')[0];
+	}
+	else if (roll >= 331 && roll <= 336) {
+		// kerbite
+		return species.filter(findSpecies, 'Kerbite')[0];
+	}else if (roll >= 341 && roll <= 346) {
+		// silicoid
+		return species.filter(findSpecies, 'Silicoid')[0];
+	}
+	else if (roll >= 411 && roll <= 436) {
+		// tentac
+		return species.filter(findSpecies, 'Tentac')[0];
+	}
+	else if (roll >= 441 && roll <= 456) {
+		// trundlian
+		return species.filter(findSpecies, 'Trundlian')[0];
+	}
+	else if (roll >= 461 && roll <= 516) {
+		// vomeg
+		return species.filter(findSpecies, 'Vomeg')[0];
+	}
+	else if (roll >= 521 && roll <= 536) {
+		// whistler
+		return species.filter(findSpecies, 'Whistler')[0];
+	}
+	else if (roll >= 541 && roll <= 556) {
+		// xoloxian
+		return species.filter(findSpecies, 'Xeloxian')[0];
+	}else if (roll >= 611 && roll <= 636) {
+		// zoallan
+		return species.filter(findSpecies, 'Zoallan')[0];
+	}
+	else if (roll == 641) {
+		// chronosian
+		return species.filter(findSpecies, 'Chronosian (Advanced)')[0];
+	}
+	else if (roll == 642) {
+
+		// minutian
+		return species.filter(findSpecies, 'Minutian (Advanced)')[0];
+	}
+	else if (roll == 643) {
+		// pyreltian
+		return species.filter(findSpecies, 'Pyreltian (Advanced)')[0];
+	}
+	else if (roll >= 644 && roll <= 645) {
+		// whaleoud
+		return species.filter(findSpecies, 'Whaloid (Advanced)')[0];
+	}
+	else if (roll == 646) {
+		// avionoid
+		return species.filter(findSpecies, 'Avianoid')[0];
+	}
+	else if (roll == 651) {
+		// cheetahoid
+		return species.filter(findSpecies, 'Cheetahoid')[0];
+	}
+	else if (roll == 652) {
+		// chroc
+		return species.filter(findSpecies, 'Crocodilian')[0];
+	}
+	else if (roll == 653) {
+		// ele
+		return species.filter(findSpecies, 'Elephantoid')[0];
+	}
+	else if (roll >= 654 && roll <= 655) {
+		// meek
+		return species.filter(findSpecies, 'Felinoids aka Meeks')[0];
+	}
+	else if (roll == 656) {
+		// gorilla
+		return species.filter(findSpecies, 'Gorilloids')[0];
+	}
+	else if (roll == 661) {
+		// lup
+		return species.filter(findSpecies, 'Lupinoids, Caninoids')[0];
+	}
+	else if (roll == 662) {
+		// lapo
+		return species.filter(findSpecies, 'Lapinoid')[0];
+	}
+	else if (roll == 663) {
+		// rhion
+		return species.filter(findSpecies, 'Rhinoceroid')[0];
+	}
+	else if (roll == 664) {
+		// snake
+		return species.filter(findSpecies, 'Reptilianoid (Snakoid)')[0];
+	}
+	else if (roll == 665) {
+		// turtle
+		return species.filter(findSpecies, 'Testudinoid (Turtloid)')[0];
+	}
+	else if (roll == 666) {
+		// ursanoid
+		return species.filter(findSpecies, 'Ursinoid')[0];
+ 	}
+	else  {
+		console.log("ERROR: " + roll);
+	}
+	//		SPECIES = [];
+	//		SPECIES[1] = [1:"Bot (sentient)", 2:"Bot (sentient)",3:"Bot (sentient)",4:"Bot (sentient)",5:"Bot (sentient)",6:"Bot (sentient)"]; 
+	return species[Math.floor(Math.random() * species.length)];
+}
 
 function getEquipment($scope, ath) {
 
@@ -25,9 +164,15 @@ function getEquipment($scope, ath) {
 	
 	// Roll on the athletics tables tables (page 161)
 	for(var i = 0; i < ath; i++) {
-		var roll = Math.floor(Math.random() * 6) + Math.floor(Math.random() * 6) + 2;
-		for(var j = 0; j < $scope.ATH[i+1][roll].length; j++) {
-			var item = $scope.ATH[i+1][roll][j];
+		var roll = d6() + d6();
+		// console.log("roll: " + roll);
+		var athTable = $scope.ATH[i+1];
+		if(!athTable) {
+			athTable = $scope.ATH[4];
+		
+		}
+		for(var j = 0; j < athTable[roll].length; j++) {
+			var item = athTable[roll][j];
 				equip.push(item);
 			
 		}
@@ -123,7 +268,7 @@ function getEnemy($scope, prof, stats, baseEquip) {
 			elif "Plasma Pistol" in equip:
 				equip[equip.index("Plasma Pistol")]="Blaster"
 			*/
-				console.log(equip);
+				// console.log(equip);
 	return {profession: prof, 
 				athletics: stats[0],
 				combat: (prof == "Marine" ? prim : sec),
@@ -195,22 +340,22 @@ app.controller('enemyGenCtrl', function ($scope,	$http) {
 	// functions 
 	
 	$scope.generateEnemy= function ()  {
-		var roll = Math.floor(Math.random() * 6) + Math.floor(Math.random() * 6) + 2;
+		var roll = d6() + d6();
+		// console.log("roll: " + roll);
 		var stats = $scope.MD[$scope.md][roll];
-		console.log(stats);
+		// console.log(stats);
 		var playerCount = $scope.playerCount;
 		md = $scope.md;
 		if($scope.selectedSpecies == null) {
-			$scope.selectedSpecies = $scope.species[Math.floor(Math.random() * $scope.species.length)];
-
+			$scope.selectedSpecies = getSpecies($scope.species);
 		}
-		console.log("generate enemy, md: " + md + " species: " + $scope.selectedSpecies.Species);
-		console.log($scope.selectedSpecies);
+		// console.log("generate enemy, md: " + md + " species: " + $scope.selectedSpecies.Species);
+		// console.log($scope.selectedSpecies);
 		var equip = getEquipment($scope, stats[0]);
 		$scope.hitPoints = Number(stats[0]) + Number($scope.selectedSpecies.BaseHitPoints) + md;
 		var profs = CORE_PROFESSIONS.slice(0);;
 		var enemies = [];
-			console.log(profs);
+		// console.log(profs);
 		for(var i = 0; i < playerCount; i++) {
 			if( profs.length == 0) {
 				 profs = CORE_PROFESSIONS.slice(0);;
