@@ -325,17 +325,18 @@ app.controller('enemyGenCtrl', function ($scope,	$http) {
 	$scope.enemies = null;
 	$scope.hitPoints = null;
 	
-    $scope.species = $http.get('http://sergio1202.github.io/js/species.json').success(function(data) {
-		$scope.species = data;
-    });
+    	$http.get('js/species.json').then(function(response) {
+		$scope.species = response.data;
+	});
+	
+	$http.get('js/equipment.json').then(function(response) {
+	    $scope.equipment = response.data;
+	});
+	
+	$http.get('js/specialAbilities.json').then(function(response) {
+	    $scope.specialAbilities = response.data;
+	});
 
-    $scope.equipment = $http.get('http://sergio1202.github.io/js/equipment.json').success(function(data) {
-		$scope.equipment = data;
-    });
-
-    $scope.specialAbilities = $http.get('http://sergio1202.github.io/js/specialAbilities.json').success(function(data) {
-		$scope.specialAbilities = data;
-    });
 
 	// functions 
 	
